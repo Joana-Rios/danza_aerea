@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style_webmoderna_v2.css">
+    <link rel="stylesheet" href="./catalogo.html">
+    <title>pagina moderna</title>
+</head>
+<body>
+    <!-- ir arriba -->
+    <div class="go-top">
+        <span id="link_nosotros"><i class="fas fa-angle-up"></i></span>
+    </div>
+
+    <!-- menu de navegancion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <h1><a href="#">Danza aerea</a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="#" class="activo">Inicio</a></li>
+                    <li><a href="#link_nosotros">Nosotros</a></li>
+                    <li><a href="./catalogo.html">Comprar</a></li>
+                    <li><a href="#link_productos">Productos</a></li>
+                    <li><a href="#link_testi">Testimonios</a></li>
+                    <li><a href="#link_formulario">Contacto</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- img header -->
+        <div class="img-header">
+            <div class="welcome">
+                <h1>Bienvenidos artistas aereos</h1>
+                <hr>
+                <p>Lo que mas amas, aquí lo encuentras</p>
+                <a href="./catalogo.html"><button id="abajo">Comprar ahora</button></a>
+            </div>
+        </div>
+        <div class="skew-abajo"></div>
+
+    </header>
+
+     <main> <!--indicar a los navegadores que estara la etiqueta principal -->
+        <section class="acerca-de" id="link_nosotros">
+            <div class="contenedor">
+                <h2 class="sobre-nosotros">Sobre nosotros</h2>
+                <h3 class="slogan">tirando codigo en la web</h3>
+                <p class="parrafo">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <p class="parrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <!-- <a href="#" class="boton">Suscribite</a> -->
+            </div>
+        </section>
+        <section class="galeria">
+           <div class="skew-arriba"></div>
+           <div class="imagenes">
+               <img src="./img/1.jpg" alt="">
+        </div>
+           <div class="imagenes">
+               <img src="./img/2.jpg" alt="">
+            </div>
+           <div class="imagenes">
+               <img src="./img/3.jpg" alt="">
+            </div>
+           <div class="imagenes">
+               <img src="./img/4.jpg" alt="">
+               <div class="encima">
+                   <h2>danza aerea</h2>
+                   <div></div>
+               </div>
+            </div>
+           <div class="imagenes">
+               <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="skew-abajo"></div>
+        </section>
+    
+        <!-- Nuestros productos -->
+        <section class="our-projects" id="link_productos">
+            <div class="skew-arriba"></div>
+
+            <div class="deg-background"></div>
+            <div class="ejeZproject">
+                <div class="container-project">
+                    <div class="project-title">
+                        <h2>Nuestros productos</h2>
+                        <hr>
+                    </div>
+                    <div class="project-img">
+                        <a href="./catalogo.html"><img src="img/iteam1.jpg" alt=""></a>
+                        <a href="./catalogo.html"><img src="img/iteam3.jpg" alt=""></a>
+                        <a href="./catalogo.html"><img src="img/iteam4.jpg" alt=""></a>
+                        <a href="./catalogo.html"><img src="img/iteam5.jpg" alt=""></a>
+                        <a href="./catalogo.html"><img src="img/iteam6.jpg" alt=""></a>
+                        <a href="./catalogo.html"><img src="img/iteam7.jpg" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="skew-abajo"></div>
+        </section>
+        <!-- Testimonios -->
+        <section class="Testimonio" id="link_testi">
+            <div class="containerT" id="testimonio" >
+                <h2>Opiniones de nuestros <b>Usuarios</h2>
+                <hr>
+                <input type="radio" name="slides" id="radio1" checked>
+                <input type="radio" name="slides" id="radio2">
+                <input type="radio" name="slides" id="radio3">
+                <ul class="slides">
+                    <li class="slide">
+                        <p>
+                            <q>Usuario1 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png" >
+                                Cristiano Cedano porque no aparece 
+                            </span>
+                        </p>
+                    </li>
+        
+                    <li class="slide">
+                        <p>
+                            <q>Usuario2 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png">
+                                Cristiano Cedano que pedo 
+                            </span>
+                        </p>
+                    </li>
+        
+                    <li class="slide">
+                        <p>
+                            <q>Usuario3 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png" alt="">
+                                Cristiano Cedano
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="navigation">
+                    <label for="radio1" id="radioSelect1"></label>
+                    <label for="radio2" id="radioSelect2"></label>
+                    <label for="radio3" id="radioSelect3"></label>
+                </div>
+            </div>  
+              
+        </section>
+    </main>
+    
+    <footer class=footer>
+        <div class="skew-arriba"></div>
+        <div class="deg-footer"></div>
+        <div class="ejeZfooter">
+            <div class="footer-content" id="link_formulario">
+            <div class="footer-title">
+                <h2>Formulario de Contacto</h2>
+                <hr>
+            </div>
+            <div class="formulario-content" >
+                <form id="formulario">
+                    <label for="user1">Nombre:</label>
+                    <input type="text" id="user" name="user1" placeholder="Ingresa tu nombre">
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="apellido" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+                    
+                    <label for="mensaje">Escribe tu mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="10" rows="5"></textarea>               
+                    <div class="send"><button>Enviar</button></div>
+                    <div class="mensaje-form">
+                        <p>Escribe tu mensaje pronto te respondenmos </p>
+                    </div>
+                </form>    
+            </div>  
+            <div class="social">
+                <ul>
+                    <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>  
+                    <li><a href="https://api.whatsapp.com/send?phone=525541178087&text=Necesito%20mas%20información"></a><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </div>
+ 
+            <div class="footer-text">
+                <p>&copy; DANZA AEREA | DERECHOS RESERVADOS </p>
+            </div> 
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
