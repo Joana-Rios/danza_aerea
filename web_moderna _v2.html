@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style_webmoderna_v2.css">
     <link rel="stylesheet" href="./catalogo.html">
+    <script src="./form.js"></script>
+    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
+    <!-- <script src="./app.js"></script> -->
     <title>pagina moderna</title>
 </head>
 <body>
@@ -162,24 +165,33 @@
                 <h2>Formulario de Contacto</h2>
                 <hr>
             </div>
-            <div class="formulario-content" >
+            <div class="formulario-content" id="formulario-content">
                 <form id="formulario">
                     <label for="user1">Nombre:</label>
-                    <input type="text" id="user" name="user1" placeholder="Ingresa tu nombre">
+                    <input type="text" id="user" name="fname" placeholder="Ingresa tu nombre">
+                    <p id="id_Nombre"></p>
                     
                     <label for="apellido">Apellido:</label>
-                    <input type="apellido" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
-                    
+                    <input type="text" id="apellido" name="fsurname" placeholder="Ingresa tu apellido">
+                    <p id="id_Apellido"></p>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" name="fphone" placeholder="55-5555-5555" onkeydown="limit(this, 10);" onkeyup="limit(this, 10);">
+                    <p id="id_Telefono"></p>
+
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu email">
-                    
+                    <input type="email" id="email" name="femail" placeholder="Ingresa tu email">
+                    <p id="id_Correo"></p>
+
                     <label for="mensaje">Escribe tu mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="10" rows="5"></textarea>               
-                    <div class="send"><button>Enviar</button></div>
-                    <div class="mensaje-form">
-                        <p>Escribe tu mensaje pronto te respondenmos </p>
+                    <textarea name="mensaje" id="mensaje" cols="5" rows="5"></textarea>               
+                    <div class="send">
+                        <input class="boton1" type="button" value="Enviar" id="submit" onclick="valida()">
                     </div>
-                </form>    
+                </form> 
+                <div class="mensaje-form">
+                    <p id="result"></p>
+                </div>  
             </div>  
             <div class="social">
                 <ul>
@@ -187,15 +199,11 @@
                     <li><a href="https://api.whatsapp.com/send?phone=525541178087&text=Necesito%20mas%20información"></a><i class="fab fa-whatsapp"></i></li>
                 </ul>
             </div>
- 
             <div class="footer-text">
                 <p>&copy; DANZA AEREA | DERECHOS RESERVADOS </p>
             </div> 
-            </div>
         </div>
         
     </footer>
-    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
 </body>
 </html>
