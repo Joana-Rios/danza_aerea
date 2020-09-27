@@ -677,12 +677,13 @@ body{
     display: inline-block;
     text-decoration: none;
     color:#fff;
-    padding: 10px 15px;
+    padding: 10px 25px;
     z-index: 0;
     transition: 0.01s ease;
 }
 .fa-facebook-f{
     background: #3b5998;
+    border-left: 2%;
     border-top-right-radius: 20%;
     color: var(--white);
 }
