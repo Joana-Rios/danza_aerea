@@ -21,9 +21,9 @@ body{
     position:fixed;
     bottom: 6.25rem;
     right: 0;
-    width: 3.1rem;
-    height: 3.1rem;
-    border: .125rem solid var(--blue1);
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid var(--blue1);
     border-radius: 50%;
     background: var(--white);
     z-index: 9999;
@@ -35,14 +35,14 @@ body{
     transition: 400ms;
 }
 .go-top:hover{
-    border: 0.12rem solid var(--black);
+    border: 2 px solid var(--black);
     background: var(--blue1);
 }
 .go-top:hover span{
     color: var(--black);
 }
 .go-top > span{
-    font-size: 1.86rem;
+    font-size: 30px;
     color: var(--black);
 }
 /* skew abajo */
@@ -82,7 +82,7 @@ body{
     top:0;
     left: 0;
     width: 100%;
-    height: 3.7rem;
+    height: 3.75rem;
     background: var(--white);
 
     display: flex;
@@ -95,7 +95,7 @@ body{
 }
 .menu .logo-box h1 a{
     text-decoration: none;
-    font-size: 1.86rem;
+    font-size: 2.1rem;
     font-weight: 800;
     color: var(--blue);  /* para escribir variables */
 }
@@ -110,8 +110,8 @@ body{
 }
 .menu .list-container .lists li a{
     text-decoration: none;
-    margin:0rem .62rem;
-    padding: 0.5rem;
+    margin:0px .62rem;
+    padding: 0.8rem;
     color: var(--blue);
     border-radius: 1.5rem;
     font-size: 1rem;
@@ -132,7 +132,7 @@ body{
 /* img header */
 .img-header{
     width: 100%;
-    height: 35rem;
+    height: 40.6rem;
     background-image: url(img/fondo.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -153,16 +153,16 @@ body{
     flex-direction: column;
 }
 .img-header .welcome h1{
-    font-size: 3.1rem;
+    font-size: 3.12rem;
     color: var(--blue);
     font-weight: 800;
 }
 .img-header .welcome hr{
-    width: 20rem;
-    height: .125rem;
+    width: 25rem;
+    height: .25rem;
     background: var(--blue1);
     border: none;
-    margin-top:0.31rem;
+    margin-top: .31rem;
 }
 .img-header .welcome p{
     font-size:1.25rem;
@@ -176,7 +176,7 @@ body{
     border-radius: 1.5rem;
     border:none;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.27rem;
     color:#fff;
     text-align: center;
     margin-top: 1.25rem;
@@ -195,7 +195,7 @@ body{
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    padding: 1.5rem 0;
+    padding: 3.25rem 0;
     
 }
 .sobre-nosotros{
@@ -213,7 +213,7 @@ body{
     color: #0779e4;
 }
 .parrafo{
-    margin-bottom: 0.81rem;
+    margin-bottom: .81rem;
     font-weight: 300;
     text-align: center;
     line-height: 1.5rem;
@@ -222,10 +222,10 @@ body{
 }
 .acerca-de .boton{
     display: inline-block;
-    padding: 0.37rem;
+    padding: .37rem;
     width: 8rem;
     font-weight: 300;
-    border: 0.063rem solid #0779e4;
+    border: 1px solid #0779e4;
     color:#0779e4;
     font-size: 1rem;
     text-align: center;
@@ -235,14 +235,14 @@ body{
 }
 .galeria{
     width: 100%;
-    height: 30rem;
+    height: 31.25rem;
     overflow: hidden;
     display: flex;
     position: relative;
 }
 .imagenes{
     width: 20%;
-    height: 30rem;
+    height: 31.25rem;
     overflow: hidden;
     position: relative;
 }
@@ -270,7 +270,7 @@ body{
     display: block;
     top:46%;
     width: 2.5rem;
-    height: 0.31rem;
+    height: .31rem;
     background: #f2f6f5;
     margin:auto
 }
@@ -303,7 +303,7 @@ body{
     
 }
 .our-projects .container-project .project-title{
-    padding:.62rem;
+    padding:.625rem;
     text-align: center;
     width:50%;
     margin:auto;
@@ -311,15 +311,14 @@ body{
 .our-projects .container-project .project-title h2{
     font-size: 2.5rem;
     color: var(--blue);
-
+    font-weight: 800;
 } 
 .our-projects .container-project .project-title hr{
-    width: 100%;
-    height: 0.188rem;
+    width: 28.12rem;
+    height: .125rem;
     background: var(--blue1);
     border: none;
-    margin-top:0.31rem;
-    margin-left: .25rem;
+    margin-top:.31rem;
 }
 .our-projects .container-project .project-img{
     width: 100%;
@@ -330,50 +329,51 @@ body{
     padding-bottom: 6.25rem;
 }
 .our-projects .container-project .project-img  a{
-    width: calc(30% - .62rem);
-    margin:.62rem;
+    width: calc(30% - 10px);
+    margin:.625rem;
     object-fit:cover;
-    border-radius: .62rem;
+    border-radius: .625rem;
     cursor:pointer;
 }
 .our-projects .container-project .project-img  img {
-    width: calc(100% - 10px);
-    margin:.62rem;
+    width: calc(100% - 20px);
+    margin:.625rem;
     object-fit:cover;
-    border-radius: .62rem;
+    border-radius: .625rem;
     cursor:pointer;
 }
 
 /* testimonios */
 .Testimonio .containerT{
-    max-width: 45rem;
+    max-width: 46.87rem;
     margin:auto;
-    height: 20rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.7rem;
+    height: 25rem;
+    margin-top: 3.25rem;
+    margin-bottom: 3.75rem;
     position: relative;
     background: var(--white);
     text-align: center;
-    padding: 3em 0;
+    padding: 4em 0;
     overflow: hidden;
     border-radius: 2.5rem;
-    border: solid .125rem var(--blue1);
+    border: solid 2px var(--blue1);
     opacity: 0.9;
     
 }
 .Testimonio .containerT h2{
     margin: 0;
-    font-size: 1.86rem;
+    font-size: 1.87rem;
     font-weight: 100;
     color: var(--blue);
 }
 .Testimonio .containerT hr{
-    width: 75%;
-    height: 0.188rem;
+    width: 50%;
+    height: .18rem;
     border: none;
     background: var(--blue1);
-    margin-top: 1.86rem;
-    margin-left: 5.5rem;    
+    margin-top: 1.87rem;
+    margin-left: 11.56remx;
+    
 }
 .Testimonio .containerT .slides{
     width: 400%;
@@ -398,8 +398,8 @@ body{
     font-weight: bold;
 }
 .Testimonio .containerT li img{
-    width: 2.7rem;
-    border-radius: 50%;
+    width: 3.75rem;
+    border-radius: 3.12rem;
     vertical-align: middle;
     margin-right: .62rem;
 }
@@ -416,9 +416,9 @@ body{
     text-align: center;
     border: 2.5rem;
     position: absolute;
-    width: 6.4rem;
+    width: 6.5rem;
     left: 50%;
-    margin-left: -2.125rem;
+    margin-left: -3.25rem;
 }
 .Testimonio .containerT input {
     display: none;
@@ -430,7 +430,7 @@ body{
     height: .62rem;
     width: .62rem;
     border-radius: 50%;
-    border: solid .125rem var(--blue);
+    border: solid 2px var(--blue);
 }
 #radio1:checked ~ .slides {
     transform: translateX(0%);
@@ -596,7 +596,7 @@ body{
         display: block;
         position: absolute;
         top: 1.25rem;
-        right: 1rem;
+        right: 1.87rem;
         font-size: 1.75rem;
         cursor: pointer;
     }
@@ -604,9 +604,9 @@ body{
     .btn-menu > fa-times {color:var(--blue);}
     .menu .list-container{
         position: absolute;
-        top: 3.5rem;
-        left:-1.25rem;
-        width:100%;
+        top: 3.75rem;
+        left:-6.25rem;
+        width:6.25rem;
         height: calc(100vh-60px);
         background: #fff;
     }
@@ -617,12 +617,12 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: .31rem solid var(--blue1);
+        border-top: 5px solid var(--blue1);
     }
     .menu .list-container .lists li{
         width: 90%;
         margin: .62rem 0rem;
-        border-bottom: .063rem solid var(--blue1);
+        border-bottom: 1px solid var(--blue1);
         text-align: center;
     }
     .menu .list-container .lists li a{
@@ -641,16 +641,14 @@ body{
     /* img header */
     .img-header .welcome h1{
         font-size: 2.5rem;
-        margin-left: 6.5rem;
     }
     .img-header .welcome > button{
-        width: 7.12rem;
-        font-size: 1rem;
+        width: 8.12rem;
+        font-size: 1.25rem;
     }
     /* acerca de nosotros */
     .acerca-de .info-container .about-gallery{
         flex-direction: column;
-    
     }
     .acerca-de .info-container .about-gallery img{ 
         width: 100%;
@@ -658,19 +656,19 @@ body{
     /* nuestro proyecto */
     .our-projects .container-project .project-img img{
         width: 80%;
-        margin-bottom: 1rem;
+        margin-bottom: 1.87rem;
     }
 }
 .fab{
-    width: 3.1rem;
-    height: 2.5rem;
+    width: 3.12rem;
+    height: 2.81rem;
     text-align: center;
-    font-size:1.86rem;
+    font-size:1.87rem;
 }
 .social{
     position: fixed;
     left: -2.5rem;
-    top:31.21rem;
+    top:31.25rem;
 }
 .social ul{
     list-style: none;
@@ -679,12 +677,13 @@ body{
     display: inline-block;
     text-decoration: none;
     color:#fff;
-    padding: .62rem .93rem;
+    padding: .62rem 1.56rem;
     z-index: 0;
     transition: 0.01s ease;
 }
 .fa-facebook-f{
     background: #3b5998;
+    border-left: 2%;
     border-top-right-radius: 20%;
     color: var(--white);
 }
@@ -694,22 +693,22 @@ body{
     color: var(--white);
 }
 .social a:hover{
-    padding:.52rem 1.56rem;
+    padding:.62rem 1.56rem;
 }
 
 @media only screen and (max-width:590px){
     .img-header .welcome h1{
-        font-weight: 1.5srem;
+        font-weight: 1.87rem;
     }
     .img-header .welcome hr{
-        width: 8.25rem;
+        width: 6.25rem;
     }
     .img-header .welcome p {
-        font-size: 1.063rem;
+        font-size: 1.06rem;
     }
     .img-header .welcome > button{
-        width: 2.25rem;
-        font-size: 1.063rem;
+        width: 6.25rem;
+        font-size: 1.06rem;
     }
     
 }
@@ -721,21 +720,18 @@ body{
     .testimonio .box-testimonio .card-testimonio{
         width: 100%;
     }
-    .testimonio .box-testimonio .card-testimonio .testimonio-text h4{
+    .testimonio .box-testimonio  .card-testimonio .testimonio-text h4{
         font-size: 1.56rem;
     }
-    .testimonio .box-testimonio .card-testimonio .testimonio-text p{
+    .testimonio .box-testimonio  .card-testimonio .testimonio-text p{
         font-size: 1.06rem;
-        line-height: 1.86rem;
+        line-height: 2.18rem;
     }
 }
 @media only screen and (max-width:900px){
-    .footer .footer-text{
-        margin-bottom:-2.9rem;
-    }
-    .footer .formulario-content {
-        width: 10%;
-        padding: 40px;
+    .footer .formulario-content{
+        width: 95%;
+        padding: 1.25rem;
     }
     .footer .formulario-content #formulario input{
         width: 100%;
