@@ -197,7 +197,7 @@ body{
         font-size: 28px;
         cursor: pointer;
     }
-    .btn-menu > .fa-bars:hover{color:var(--blue);}
+    .btn-menu > .fa-bars:hover {color:var(--blue);}
     .btn-menu > fa-times {color:var(--blue);}
     .menub .list-container{
         position: absolute;

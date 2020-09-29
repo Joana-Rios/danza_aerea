@@ -1,6 +1,9 @@
-let btnMenu = document.querySelector(".btn-menu");
-let menu = document.querySelector(".list-container");
-let containerMenu = document.querySelector("menu");
+let btnMenu = document.querySelector('.btn-menu');
+console.log(btnMenu);
+let menu = document.querySelector(".list-container"); //Barra de nave
+console.log(menu);
+let containerMenu = document.querySelector("menu"); //contenedor del
+console.log(containerMenu);
 let activador = true;
 
 // Mnenu d enavegacion//
@@ -11,17 +14,13 @@ btnMenu.addEventListener("click", () =>{
     if(activador){
         menu.style.left ="0";
         menu.style.transition ="0.5s";
-
         activador =false;
-    }
-    else{
+    } else {
         activador=false;
         menu.style.left = "-100%";
         menu.style.transition = "0.5s";
-
         activador = true;
     }
-
 });
    
 // intecalar clases active//
