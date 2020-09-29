@@ -2,7 +2,7 @@ let btnMenu = document.querySelector('.btn-menu');
 console.log(btnMenu);
 let menu = document.querySelector(".list-container"); //Barra de nave
 console.log(menu);
-let containerMenu = document.querySelector("menu"); //contenedor del
+let containerMenu = document.querySelector(".menu"); //contenedor del
 console.log(containerMenu);
 let activador = true;
 
@@ -39,7 +39,7 @@ enlaces.forEach((element)=>{
 //efectos scroll//
 
 let prevScrollpos =window.pageYOffset;
-let  goTop = document.querySelector("go-top");
+let  goTop = document.querySelector(".go-top");
 window.onscroll = () => {                                                                                                                                                                                                                                            
     let currenscrollpos = window.pageYOffset;
 
@@ -70,8 +70,8 @@ goTop.addEventListener("click", () =>{
     document.documentElement.scrollTop = 0;
 });
 
-let verAbajo = document.querySelector("#abajo");
-varAbajo.addEventListener("click", () =>{
+let verAbajo = document.querySelector('.abajo');
+verAbajo.addEventListener("click", () =>{
     document.body.scrollTop =600;
     document.documentElement.scrollTop = 600;
 });
