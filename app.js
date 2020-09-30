@@ -12,6 +12,10 @@ btnMenu.addEventListener("click", () =>{
     document.querySelector(".btn-menu i").classList.toggle ("fa-times");
     console.log("Funciona");
     if(activador){
+        let lista = document.querySelectorAll(".lists li") 
+        console.log(lista);
+        lista.forEach((element) => {
+            element.style.display="block"});
         menu.style.left ="0";
         menu.style.transition ="0.5s";
         activador =false;

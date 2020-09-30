@@ -620,6 +620,7 @@ body{
         border-top: .31rem solid var(--blue1);
     }
     .menu .list-container .lists li{
+        display: none;
         width: 90%;
         margin: .62rem 0rem;
         border-bottom: .063rem solid var(--blue1);
