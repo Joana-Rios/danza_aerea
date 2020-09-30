@@ -649,17 +649,34 @@ body{
         font-size: 1rem;
     }
     /* acerca de nosotros */
+    
     .acerca-de .info-container .about-gallery{
         flex-direction: column;
     
     }
+    
     .acerca-de .info-container .about-gallery img{ 
         width: 100%;
+        
     }
     /* nuestro proyecto */
+    .our-projects .container-project{
+        width: 90%;
+        margin:auto;
+        padding-top:6.25rem;
+        
+    }
+    .our-projects .container-project .project-title h2{
+        font-size: 1.7rem;
+        
+    }
     .our-projects .container-project .project-img img{
-        width: 80%;
+        width: 100%;        
         margin-bottom: 1rem;
+
+    }
+    .our-projects .container-project .project-img a{
+        width:calc(40% - .5rem);
     }
 }
 .fab{
