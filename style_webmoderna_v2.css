@@ -169,7 +169,7 @@ body{
     color: var(--blue);
     margin-top:1.25rem;
 }
-.img-header .welcome a >button{
+/* .img-header .welcome a >button{
     width: 10.62rem;
     height: 2.5rem;
     background: var(--blue1);
@@ -182,10 +182,35 @@ body{
     margin-top: 1.25rem;
     cursor: pointer;
     transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
 }
 .img-header .welcome >button:hover{
-    background:var(--blue) ;
+    background:var(--blue);
+    box-shadow: red;
+    transition-delay: 4s;
+} */
+.img-header .welcome a >button{
+    width:280px;
+    display:block;
+    background:linear-gradient(50deg, var(--blue), var(--white));
+    padding:20px 30px;
+    text-align:center;
+    margin:auto;
+    margin-top:30px;
+    color:blue;
+    font-size:20px;
+    border:none;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border-radius:20px;
+    outline: none;
 }
+.img-header .welcome a >button:hover{
+    transform: translateY(10px);
+    box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+
 /* acerca de nosotros  */
 .acerca-de{
     background: #f2f6f5;
@@ -279,11 +304,11 @@ body{
     position: relative;
     width: 100%;
     height: 160%;
-    background: url(./img/fondo.jpg);
+    /* background: url(./img/fondo.jpg); */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin-top:5rem;
+    /* margin-top:1rem; */
 }
 .our-projects .deg-background{
     position:absolute;
@@ -307,6 +332,7 @@ body{
     text-align: center;
     width:50%;
     margin:auto;
+    margin-top:1rem;
 }
 .our-projects .container-project .project-title h2{
     font-size: 2.5rem;
@@ -492,8 +518,14 @@ body{
     margin:auto;
     height: .18rem;
     background:var(--blue);
-    border:none;
-    
+    border:none; 
+}
+.footer .footer-content .footer-title h4{
+    text-align: center;
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight:800;
+    margin-top:1.62rem;
 }
 .footer .footer-content .formulario-content{
     width: 50%;
@@ -501,7 +533,7 @@ body{
     background:#fff;
     border-radius: 1.25rem;
     border: 2px solid var(--blue1);
-    margin: 3.12rem auto;
+    margin: .1rem auto;
     padding: 1.87rem;
 }
 .footer .footer-content .formulario-content #formulario{
@@ -589,6 +621,12 @@ body{
     color: #fff;
     font-size: 1.25rem;
 }
+.footer .footer-text a{
+    color: var(--white);
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 5px;
+}
 
 /* media query */
 @media only screen and (max-width:900px){
@@ -597,11 +635,11 @@ body{
         position: absolute;
         top: 1.25rem;
         right: 1rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
         cursor: pointer;
     }
-    .btn-menu > .fa-bars:hover{color:var(--blue);}
-    .btn-menu > fa-times {color:var(--blue);}
+    .btn-menu > .fa-bars:hover{color: var(--blue);}
+    .btn-menu > fa-times {color: var(--blue);}
     .menu .list-container{
         position: absolute;
         top: 3.5rem;
@@ -620,6 +658,7 @@ body{
         border-top: .31rem solid var(--blue1);
     }
     .menu .list-container .lists li{
+        display: none;
         width: 90%;
         margin: .62rem 0rem;
         border-bottom: .063rem solid var(--blue1);
@@ -648,17 +687,34 @@ body{
         font-size: 1rem;
     }
     /* acerca de nosotros */
+    
     .acerca-de .info-container .about-gallery{
         flex-direction: column;
     
     }
+    
     .acerca-de .info-container .about-gallery img{ 
         width: 100%;
+        
     }
     /* nuestro proyecto */
+    .our-projects .container-project{
+        width: 90%;
+        margin:auto;
+        padding-top:6.25rem;
+        
+    }
+    .our-projects .container-project .project-title h2{
+        font-size: 1.7rem;
+        
+    }
     .our-projects .container-project .project-img img{
-        width: 80%;
+        width: 100%;        
         margin-bottom: 1rem;
+
+    }
+    .our-projects .container-project .project-img a{
+        width:calc(40% - .5rem);
     }
 }
 .fab{
@@ -669,7 +725,7 @@ body{
 }
 .social{
     position: fixed;
-    left: -2.5rem;
+    left: -1.5rem;
     top:31.21rem;
 }
 .social ul{

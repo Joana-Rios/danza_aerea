@@ -9,7 +9,8 @@ body{
     font-family: 'Cinzel', serif;
     width: 100%;
     height: 650px;
-    background-image: url(img/fondo.jpg);
+    background: var(--white);
+    /* background-image: url(img/fondo.jpg); */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -120,12 +121,14 @@ body{
     justify-content:space-around;  
 }
 .card{
-    margin: 15px 1px;
-    width: 30%;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 23%;
     height: 270px;
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0, 0, 12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 10px;
+    box-shadow: 0 1px 3px var(--blue1), 0 1px 2px var(--blue1);
     border-radius: 30px;
     background-color: #ebebeb;
     opacity: 0.96;
@@ -133,28 +136,28 @@ body{
     
 }
 .productos .product img{
-    width: 150px;
+    width: 180px;
     height:140px;
     cursor:pointer;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 10%;
 }
 .productos .product h3{
     font-size: 25px;
     text-align: center;
     color: var(--blue1);
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+    margin-top:1px;
 }
 .productos .product p{
     color: var(--blue1);
     text-align: center;
     margin-top: 2px;
-    
 }
 .product .card >button{
     width: 120px;
     height: 40px;
-    background: #ebebeb;
+    background:linear-gradient(80deg, var(--blue), var(--white));
     border-radius: 24px;
     border: 1px solid var(--blue);
     outline: none;
@@ -164,12 +167,121 @@ body{
     text-align: center;
     margin-top: -20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
     align-content: right;
     font-family: 'Cinzel', serif;
 }
 .product .card >button:hover{
-    background:grey;
+    transform: translateY(2px);
+    box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+.Testimonio .test-title h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-top: 10rem;
+}
+.Testimonio .containerT{
+    max-width: 45rem;
+    margin:auto;
+    height: 16rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.7rem;
+    position: relative;
+    background: var(--white);
+    text-align: center;
+    padding: 3em 0;
+    overflow: hidden;
+    border-radius: 2.5rem;
+    border: solid .125rem var(--blue1);
+    opacity: 0.9;
+    
+}
+.Testimonio .containerT h2{
+    margin: 0;
+    font-size: 1.86rem;
+    font-weight: 100;
+    color: var(--blue);
+}
+.Testimonio .containerT hr{
+    width: 60%;
+    border-style: dashed;
+    color: var(--blue);
+    margin-top: 1.86rem;
+    margin-left: 8.5rem;    
+}
+.Testimonio .containerT .slides{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1.25rem;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all .8s cubic-bezier(1,0,0,1);
+}
+.Testimonio .slides li{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+.Testimonio .containerT li q{
+    max-width: 90%;
+    margin: auto;
+    color: var(--blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.Testimonio .containerT li img{
+    width: 2.7rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: .62rem;
+}
+.Testimonio .containerT li span.author{
+    margin-top: 1.25rem;
+    font-size: 1.12rem;
+    font-weight: 100;
+    color: var(--blue);
+    display: block;
+}
+.Testimonio .navigation{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: 2.5rem;
+    position: absolute;
+    width: 6.4rem;
+    left: 50%;
+    margin-left: -2.125rem;
+}
+.Testimonio .containerT input {
+    display: none;
+}
+.Testimonio .navigation label {
+    float: left;
+    margin: .37rem;
+    display: block;
+    height: .62rem;
+    width: .62rem;
+    border-radius: 50%;
+    border: solid .125rem var(--blue);
+}
+#radio1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#radio2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+#radio3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+.navigation label:hover {
+    cursor:pointer;
+}
+#radio1:checked ~ .navigation label#radioSelect1,
+#radio2:checked ~ .navigation label#radioSelect2,
+#radio3:checked ~ .navigation label#radioSelect3 {
+    background: var(--blue1);
 }
 .footer .footer-text{
     position: relative;
@@ -187,6 +299,12 @@ body{
 .footer  .footer-text p{
     color: var(--white);
     font-size: 20px;
+}
+.footer .footer-text a{
+    color: var(--white);
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 5px;
 }
 @media only screen and (max-width:900px){
     .btn-menu > .fa-bars{
