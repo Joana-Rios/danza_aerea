@@ -1,0 +1,615 @@
+:root{
+    --blue1:#3282b8 ;
+    --white:#f2f6f5;
+    --blue:#0779e4;
+    --black: #1b262c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--white);
+    color: var(--black);
+}
+.go-top {
+    position:fixed;
+    bottom: 100px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--blue1);
+    border-radius: 50%;
+    background: var(--white);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+.go-top:hover{
+    border: 2 px solid var(--black);
+    background: var(--blue1);
+}
+.go-top:hover span{
+    color: var(--black);
+}
+.go-top > span{
+    font-size: 30px;
+    color: var(--black);
+}
+.main-header{
+    background-color:var(--blue);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#header{
+    position: relative;
+    width: 100%;
+}
+.menub{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menub .logo-box{
+    margin-left: 20px;
+}
+.menub .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--blue);  /* para escribir variables */
+}
+.menub .list-container{
+    margin-left: 20px;
+}
+.menub .list-container .lists{
+    display: flex;
+}
+.menub .list-container .lists li{
+    list-style: none;
+}
+.menub .list-container .lists li a{
+    text-decoration: none;
+    margin:0px 10px;
+    padding: 8px;
+    color: var(--blue);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menub .list-container .lists li a.activo{
+    background: var(--blue);
+    color:#fff;
+}
+.menub .list-container .lists li a:hover{
+    background: var(--blue);
+    color:#fff;
+}
+.btn-menu > .fab-bars{
+    display: none;
+}
+.contenedor{
+    width: 100%;
+    /* max-width: 1000px; */
+    margin: 20px 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 , 1fr) ; /*para indicar cuantas col. se necesita */
+    grid-template-rows: repeat(7, auto);
+
+    grid-template-areas: "header header header"
+                         "contenido contenido pfinal"
+                         "diseno diseno pfinal"
+                         "talla talla pfinal"
+                         "c-completo c-completo c-completo"
+                         "opiniones opiniones opiniones"
+                         "footer footer footer";              
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .diseno,
+.contenedor .talla,
+.contenedor .pfinal,
+.contenedor .c-completo,
+.contenedor .opiniones,
+.contenedor .footer {
+    background: var(--blue);
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedor .header{
+    background: var(--blue);
+    color:var(--black);
+    grid-area: header;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+}
+/* Paso 1 elige tu producto */
+.contenedor .contenido{
+    grid-area: contenido;
+    background: var(--white);
+}
+.contenedor h1{
+    font-size: 40px;
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor h2{
+    font-size: 30px;
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor p{
+    font-size: 20px;
+    color: var(--blue);
+    text-align: center;
+}
+.produc img{
+    width: 150px;
+    height:140px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor:pointer;
+    object-fit: cover;
+    border-radius:20%;
+    margin-left:50px;
+}
+/* Paso 2 elige tu diseño */
+.contenedor .diseno{
+    grid-area: diseno;
+    background: var(--white);
+}
+.diseño img{
+    width: 150px;
+    height:140px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor:pointer;
+    object-fit: cover;
+    border-radius:20%;
+    margin-left:50px;
+}
+.diseno h2{
+    font-size: 30px;
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.diseno p{
+    font-size: 20px;
+    color: var(--blue);
+    text-align: center;
+}
+/* Paso 3 elige tu talla y color  */
+.contenedor .talla{
+    grid-area: talla;
+    background: var(--white);
+}
+.talla h1{
+    font-size: 40px;
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.talla h2{
+    font-size: 30px;
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.talla p{
+    font-size: 20px;
+    color: var(--blue);
+    text-align: center;
+}
+.talla label{
+    color: var(--blue);
+    margin-left: 50px;
+    font-size: 18px;
+}
+.tallas{
+    font-size: 15px;
+    color: var(--blue);
+}
+.talla .color{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.talla .color img{
+    width: 50px;
+    height:40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor:pointer;
+    object-fit: cover;
+    border-radius:20%;
+    margin-left:50px;
+}
+/* Visualiza tu prodcuto final */
+.contenedor .pfinal{
+    grid-column: 3 / 4;
+    background: var(--blue1);
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100px;
+    grid-area: pfinal;
+    width: 500px;
+}
+.pfinal h3{
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pfinal button{
+    width: 300px;
+    height: 60px;
+    background:linear-gradient(80deg, var(--blue), var(--white));
+    border-radius: 24px;
+    border: 1px solid var(--blue);
+    outline: none;
+    font-size:15px;
+    font-weight: 700;
+    color:var(--black);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    align-content: right;
+    font-family: 'Cinzel', serif;
+    margin-top: 600px;
+}
+.pfinal >button:hover{
+    transform: translateY(2px);
+    box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+/* Catalogo completo */
+.contenedor .c-completo{
+    grid-area: c-completo;
+    height: 20rem;
+    background: var(--white);
+}
+.carrusel {
+    width: 90%;
+    /* overflow: hidden; desbordamiento de la seccion scroll: barras de desp, auto: barra ver,hidden: oculto */
+    padding: 0px 30px;
+    position: relative; /* a partir de bloque, absolute: a partir del margen, sticky: pagajoso*/
+}
+.carrusel__container {
+    white-space: nowrap;
+    margin: 0px;
+    padding-bottom: 10px; /* Espacio abajo, right, left top */
+}
+.carrusel-item{
+    background-color: none;
+    width: 16.7%;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: auto;
+    transition: 450ms all;
+    transform-origin: center left;
+    border-radius: 10px;
+}
+.carrusel-item:hover ~ .carrusel-item img{
+    transform: translate3d(50px,0,0); /* Hace que se recorra la imagen para mostrar la principal */
+}
+.carrusel__container:hover .carrusel-item img {
+    opacity: 0.5; /*el elemento secundario tiene esta opacidad*/
+}
+.carrusel__container:hover .carrusel-item:hover img{
+    transform: scale(1.2); /* define el tamaño del bloque que crecera */
+    opacity: 1;
+    border-radius: 10px;
+}
+.carrusel-item img{
+    width: 180px;
+    height:140px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor:pointer;
+    object-fit: cover;    
+}
+.carrusel-item h3{
+    font-size: 25px;
+    text-align: center;
+    color: var(--blue1);
+    margin-bottom: 1px;
+    margin-top:3px;
+}
+.carrusel-item p{
+    color: var(--blue1);
+    text-align: center;
+    margin-top: 2px;
+}
+.carrusel__container .carrusel-item >button{
+    width: 120px;
+    height: 40px;
+    background:linear-gradient(80deg, var(--blue), var(--white));
+    border-radius: 24px;
+    border: 1px solid var(--blue);
+    outline: none;
+    font-size: 10px;
+    font-weight: 700;
+    color:var(--black);
+    text-align: center;
+    margin-top: 10px;
+    margin-left:20px;
+    cursor: pointer;
+    transition: 0.2s;
+    align-content: right;
+    font-family: 'Cinzel', serif;
+}
+.carrusel__container .carrusel-item >button:hover{
+    transform: translateY(2px);
+    box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+}
+/* Opiniones */
+.contenedor .opiniones{
+    background: var(--white);
+    color: var(--black);
+    height: 30rem;
+    padding: 3em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: opiniones;
+}
+.Testimonio .test-title h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+.Testimonio .containerT{
+    max-width: 45rem;
+    margin:auto;
+    height: 16rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.7rem;
+    position: relative;
+    background: var(--white);
+    text-align: center;
+    padding: 3em 0;
+    overflow: hidden;
+    border-radius: 2.5rem;
+    border: solid .125rem var(--blue1);
+    opacity: 0.9;
+}
+.Testimonio .containerT h2{
+    margin: 0;
+    font-size: 1.86rem;
+    font-weight: 100;
+    color: var(--blue);
+}
+.Testimonio .containerT hr{
+    width: 60%;
+    border-style: dashed;
+    color: var(--blue);
+    margin-top: 1.86rem;
+    margin-left: 8.5rem;    
+}
+.Testimonio .containerT .slides{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1.25rem;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all .8s cubic-bezier(1,0,0,1);
+}
+.Testimonio .slides li{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+.Testimonio .containerT li q{
+    max-width: 90%;
+    margin: auto;
+    color: var(--blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.Testimonio .containerT li img{
+    width: 2.7rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: .62rem;
+}
+.Testimonio .containerT li span.author{
+    margin-top: 1.25rem;
+    font-size: 1.12rem;
+    font-weight: 100;
+    color: var(--blue);
+    display: block;
+}
+.Testimonio .navigation{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: 2.5rem;
+    position: absolute;
+    width: 6.4rem;
+    left: 50%;
+    margin-left: -2.125rem;
+}
+.Testimonio .containerT input {
+    display: none;
+}
+.Testimonio .navigation label {
+    float: left;
+    margin: .37rem;
+    display: block;
+    height: .62rem;
+    width: .62rem;
+    border-radius: 50%;
+    border: solid .125rem var(--blue);
+}
+#radio1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#radio2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+#radio3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+.navigation label:hover {
+    cursor:pointer;
+}
+#radio1:checked ~ .navigation label#radioSelect1,
+#radio2:checked ~ .navigation label#radioSelect2,
+#radio3:checked ~ .navigation label#radioSelect3 {
+    background: var(--blue1);
+}
+/* Footer */
+.contenedor .footer {
+    grid-area: footer;
+    background: var(--blue1);
+}
+.footer .footer-text{
+    position: relative;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(0,0,0,0.9);
+    border-top: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.footer  .footer-text p{
+    color: var(--white);
+    font-size: 20px;
+}
+.footer .footer-text a{
+    color: var(--white);
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "pfinal pfina pfinal"
+                         "diseno diseno diseno"
+                         "talla talla talla"
+                         "c-completo c-completo c-completo"
+                         "opiniones opiniones opiniones"
+                         "footer footer footer";
+    }
+}
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .btn-menu > .fa-bars:hover {color:var(--blue);}
+    .btn-menu > fa-times {color:var(--blue);}
+    .menub .list-container{
+        position: absolute;
+        top: 60px;
+        left:-1000px;
+        width:100%;
+        height: calc(100vh-60px);
+        background: #fff;
+    }
+    .menub .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid var(--blue1);
+    }
+    .menub .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--blue1);
+        text-align: center;
+    }
+    .menub .list-container .lists li a{
+        font-size: 20px;
+    }
+    .menub .list-container .lists li a.active{
+        background: none;
+        color: var(--blue1);
+    }
+    .menub .list-container .lists li a:hover{
+        background: none;
+        color: var(--blue1);
+    }
+}
+.footer .social .fab{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size:30px;
+}
+.footer .social{
+    position: fixed;
+    left: -15px;
+    top:500px;
+}
+.footer .social ul{
+    list-style: none;
+}
+.footer .social i{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.01s ease;
+}
+.footer .social .fa-facebook-f{
+    background: #3b5998;
+    border-top-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social .fa-whatsapp{
+    background: #25d366;
+    border-bottom-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social i:hover{
+    padding:10px 25px;
+}
+
+
+
