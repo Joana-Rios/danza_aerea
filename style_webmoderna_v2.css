@@ -227,20 +227,63 @@ body{
     padding: 2.5rem;
     background: var(--white);
 }
-.contenedor-detalles{
+.contenedor .pasos{
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
-.content-title h2{
-    font-size: 30px;
+.contenedor h2{
+    font-size: 2.5rem;
     color:var(--blue);
     text-align: center;
-    
 }
-.content-title hr{
+.contenedor hr{
+    width: 40%;
+    margin:auto;
+    height: .18rem;
+    background:var(--blue);
+    border:none; 
+}
+.contenedor h3{
+    font-size: 1.5rem;
+    color:var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.contenedor h4{
+    font-size: 1.2rem;
+    color:var(--black);
+    text-align: center;
+    margin-bottom: .8rem;
+}
+.contenedor .pasos p{
+    font-size: 1rem;
+    color:var(--black);
+    text-align: center;
+    margin-bottom: .8rem;
+}
+.contenedor .pasos img{
+    width: 50%;
+    margin-bottom: 1.25rem;
+    margin-left: 1.5rem;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+.contenedor .pasos .color{
+    width: 38%;
+    margin-bottom: 1.25rem;
+    margin-left: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+/* .content-title h3{
     margin-bottom: 2.5rem;
     width: 24%;
     height: 0.188rem;
@@ -258,8 +301,8 @@ body{
     width: 40%;
     margin-bottom: 1.25rem;
     border-radius: 50%;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 500ms;
@@ -280,7 +323,7 @@ body{
     text-align: center;
     margin: 0.063rem 0rem;
     border-color: lawngreen;
-}
+} */
 .galeria{
     width: 100%;
     height: 30rem;
@@ -536,8 +579,16 @@ body{
     font-weight:800;
     margin-bottom:.62rem;
 }
+.footer .footer-content .footer-title p{
+    text-align: center;
+    color: var(--blue1);
+    font-size: 1rem;
+    font-weight:800;
+    margin-top: .80rem;
+    margin-bottom:-.8rem;
+}
 .footer .footer-content .footer-title hr{
-    width: 60%;
+    width: 69%;
     margin:auto;
     height: .18rem;
     background:var(--blue);
