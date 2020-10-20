@@ -12,14 +12,15 @@
 body{
     background: var(--white);
     color: var(--black);
+    font-family: 'Cinzel', serif;
 }
 .go-top {
     position:fixed;
-    bottom: 100px;
+    bottom: 6.25rem;
     right: 0;
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--blue1);
+    width: 3.1rem;
+    height: 3.1rem;
+    border: .125rem solid var(--blue1);
     border-radius: 50%;
     background: var(--white);
     z-index: 9999;
@@ -31,14 +32,14 @@ body{
     transition: 400ms;
 }
 .go-top:hover{
-    border: 2 px solid var(--black);
+    border: 0.12rem solid var(--black);
     background: var(--blue1);
 }
 .go-top:hover span{
     color: var(--black);
 }
 .go-top > span{
-    font-size: 30px;
+    font-size: 1.86rem;
     color: var(--black);
 }
 .main-header{
@@ -57,7 +58,7 @@ body{
     top:0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 3.7rem;
     background: var(--white);
 
     display: flex;
@@ -66,11 +67,12 @@ body{
     z-index: 9999;
 }
 .menub .logo-box{
-    margin-left: 20px;
+    margin-left: 1.25rem;
+    margin-top: 1.5rem;
 }
 .menub .logo-box h1 a{
     text-decoration: none;
-    font-size: 35px;
+    font-size: 1.86rem;
     font-weight: 800;
     color: var(--blue);  /* para escribir variables */
 }
@@ -85,11 +87,11 @@ body{
 }
 .menub .list-container .lists li a{
     text-decoration: none;
-    margin:0px 10px;
-    padding: 8px;
+    margin:0rem .62rem;
+    padding: 0.5rem;
     color: var(--blue);
-    border-radius: 24px;
-    font-size: 16px;
+    border-radius: 1.5rem;
+    font-size: 1rem;
     transition: 0.3s;
 }
 .menub .list-container .lists li a.activo{
@@ -118,7 +120,7 @@ body{
                          "talla talla pfinal"
                          "c-completo c-completo c-completo"
                          "opiniones opiniones opiniones"
-                         "footer footer footer";          
+                         "pie-pag pie-pag pie-pag";              
 }
 
 .contenedor > div,
@@ -128,8 +130,7 @@ body{
 .contenedor .talla,
 .contenedor .pfinal,
 .contenedor .c-completo,
-.contenedor .opiniones,
-.contenedor .footer {
+.contenedor .opiniones {
     background: var(--blue);
     padding: 20px;
     border-radius: 4px;
@@ -507,28 +508,29 @@ body{
     100%{ margin-left: -200%;}
 }
 /* Footer */
-.contenedor .footer {
-    grid-area: footer;
-    background: var(--blue1);
+.contenedor .pie-pag{
+    grid-area: pie-pag;
+   
 }
-.footer .footer-text{
+.pie-pag .footer-text{
     position: relative;
     bottom:0px;
     left: 0;
-    width: 100%;
+    width: 350%;
     height: 40px;
     background: rgba(0,0,0,0.9);
     border-top: 5px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-bottom: -20px;
+    margin-left: -20px;
 }
-.footer  .footer-text p{
+.pie-pag  .footer-text p{
     color: var(--white);
     font-size: 20px;
 }
-.footer .footer-text a{
+.pie-pag .footer-text a{
     color: var(--white);
     font-size: 18px;
     margin-left: 4px;
@@ -592,21 +594,21 @@ body{
         color: var(--blue1);
     }
 }
-.footer .social .fab{
+.pie-pag .social .fab{
     width: 25px;
     height: 25px;
     text-align: center;
     font-size:30px;
 }
-.footer .social{
+.pie-pag .social{
     position: fixed;
     left: -15px;
     top:500px;
 }
-.footer .social ul{
+.pie-pag .social ul{
     list-style: none;
 }
-.footer .social i{
+.pie-pag .social i{
     display: inline-block;
     text-decoration: none;
     color:#fff;
@@ -614,17 +616,17 @@ body{
     z-index: 0;
     transition: 0.01s ease;
 }
-.footer .social .fa-facebook-f{
+.pie-pag .social .fa-facebook-f{
     background: #3b5998;
     border-top-right-radius: 20%;
     color: var(--white);
 }
-.footer .social .fa-whatsapp{
+.pie-pag .social .fa-whatsapp{
     background: #25d366;
     border-bottom-right-radius: 20%;
     color: var(--white);
 }
-.footer .social i:hover{
+.pie-pag .social i:hover{
     padding:10px 25px;
 }
 

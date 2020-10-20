@@ -212,7 +212,7 @@ body{
 
 /* acerca de nosotros  */
 .acerca-de{
-    background: #f2f6f5;
+    /* background: #f2f6f5; */
 }
 /* .contenedor{
     width: 90%;
@@ -233,24 +233,26 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border:none;
 }
 .contenedor h2{
     font-size: 2.5rem;
     color:var(--blue);
     text-align: center;
+    margin-top: -1.5rem;
 }
 .contenedor hr{
-    width: 40%;
+    width: 20%;
     margin:auto;
     height: .18rem;
     background:var(--blue);
-    border:none; 
+     
 }
 .contenedor h3{
     font-size: 1.5rem;
     color:var(--black);
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     margin-top: 1.5rem;
 }
 .contenedor h4{
@@ -258,26 +260,22 @@ body{
     color:var(--black);
     text-align: center;
     margin-bottom: .8rem;
-}
-.contenedor .pasos p{
-    font-size: 1rem;
-    color:var(--black);
-    text-align: center;
-    margin-bottom: .8rem;
+    border:none;
 }
 .contenedor .pasos img{
-    width: 50%;
+    width: 60%;
     margin-bottom: 1.25rem;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     border-radius: 50%;
     align-items: center;
     cursor: pointer;
     transition: 500ms;
+    border:none;
 }
 .contenedor .pasos .color{
-    width: 38%;
+    width: 45%;
     margin-bottom: 1.25rem;
-    margin-left: 3rem;
+    margin-left: 5.5rem;
     border-radius: 50%;
     align-items: center;
     cursor: pointer;
@@ -330,6 +328,7 @@ body{
     overflow: hidden;
     display: flex;
     position: relative;
+    border:none;
 }
 .imagenes{
     width: 20%;
