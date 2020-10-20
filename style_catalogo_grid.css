@@ -428,7 +428,7 @@ body{
     padding-bottom: 1.5rem;
     overflow: hidden;
     list-style: none;
-    /* position: relative; */
+    position: relative;
     transition: all .8s cubic-bezier(1,0,0,1); 
 }
 .Testimonio .containerT .slides li {
@@ -451,7 +451,7 @@ body{
     display: block;
 }
 .Testimonio .containerT input {
-    display: none;
+    display: block;
 }
 .Testimonio .navigation{
     margin-top: 1rem;
@@ -472,11 +472,8 @@ body{
     border-radius: 50%;
     border: solid .125rem var(--blue);
 }
-#radio1:checked ~ .slides{
+#radio1:checked ~ .slides {
     transform: translateX(0%);
-}
-#radio1:checked ~ #radio2, #radio3 {
-
 }
 #radio2:checked ~ .slides {
     transform: translateX(-33.3%);
@@ -492,11 +489,8 @@ body{
 #radio3:checked ~ .navigation label#radioSelect3 {
     background: var(--blue1);
 }
-/* .containerT ul{
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: cambio 5S infinite alternate;
+.containerT ul{
+    animation: cambio 10S infinite;
 }
 .slider ul:hover{
     animation-play-state: paused;
@@ -511,7 +505,7 @@ body{
 
     67%{ margin-left: -200%;}
     100%{ margin-left: -200%;}
-} */
+}
 /* Footer */
 .contenedor .footer {
     grid-area: footer;
