@@ -7,6 +7,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
 }
 body{
     background: var(--white);
@@ -117,7 +118,7 @@ body{
                          "talla talla pfinal"
                          "c-completo c-completo c-completo"
                          "opiniones opiniones opiniones"
-                         "footer footer footer";              
+                         "footer footer footer";          
 }
 
 .contenedor > div,
@@ -383,15 +384,19 @@ body{
     justify-content: center;
     grid-area: opiniones;
 }
+.contenedor .opiniones .Testimonio {
+    width: 100%;
+}
 .Testimonio .test-title h2{
     font-size: 2.5rem;
     color: var(--blue);
     margin-bottom: 3rem;
 }
 .Testimonio .containerT{
-    max-width: 45rem;
+    /* max-width: 50rem; */
+    width: 55%;
     margin:auto;
-    height: 16rem;
+    height: 20rem;
     margin-top: 1.5rem;
     margin-bottom: 2.7rem;
     position: relative;
@@ -413,32 +418,26 @@ body{
     width: 60%;
     border-style: dashed;
     color: var(--blue);
-    margin-top: 1.86rem;
-    margin-left: 8.5rem;    
+    margin: auto;
+    margin-top: 1.5rem;
 }
 .Testimonio .containerT .slides{
-    width: 400%;
-    left: 0;
-    padding-left: 0;
+    display: flex;
+    width: 300%;
     padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
     overflow: hidden;
     list-style: none;
-    position: relative;
-    transition: all .8s cubic-bezier(1,0,0,1);
+    /* position: relative; */
+    transition: all .8s cubic-bezier(1,0,0,1); 
 }
-.Testimonio .slides li{
-    width: 25%;
+.Testimonio .containerT .slides li {
+    width: 33.3%;
+    list-style: none;
     position: relative;
     float: left;
 }
-.Testimonio .containerT li q{
-    max-width: 90%;
-    margin: auto;
-    color: var(--blue);
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-.Testimonio .containerT li img{
+.Testimonio .containerT .slides li img{
     width: 2.7rem;
     border-radius: 50%;
     vertical-align: middle;
@@ -451,36 +450,39 @@ body{
     color: var(--blue);
     display: block;
 }
+.Testimonio .containerT input {
+    display: none;
+}
 .Testimonio .navigation{
+    margin-top: 1rem;
     display: block;
     list-style: none;
     text-align: center;
     border: 2.5rem;
-    position: absolute;
+    position: relative;
     width: 6.4rem;
-    left: 50%;
-    margin-left: -2.125rem;
-}
-.Testimonio .containerT input {
-    display: none;
+    margin: auto;
 }
 .Testimonio .navigation label {
     float: left;
     margin: .37rem;
     display: block;
-    height: .62rem;
-    width: .62rem;
+    height: 0.62rem;
+    width: 0.62rem;
     border-radius: 50%;
     border: solid .125rem var(--blue);
 }
-#radio1:checked ~ .slides {
+#radio1:checked ~ .slides{
     transform: translateX(0%);
 }
+#radio1:checked ~ #radio2, #radio3 {
+
+}
 #radio2:checked ~ .slides {
-    transform: translateX(-25%);
+    transform: translateX(-33.3%);
 }
 #radio3:checked ~ .slides {
-    transform: translateX(-50%);
+    transform: translateX(-66.6%);
 }
 .navigation label:hover {
     cursor:pointer;
@@ -490,6 +492,26 @@ body{
 #radio3:checked ~ .navigation label#radioSelect3 {
     background: var(--blue1);
 }
+/* .containerT ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 5S infinite alternate;
+}
+.slider ul:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes cambio{
+    0%{ margin-left: 0%;}
+    33%{ margin-left: 0%;}
+
+    34%{ margin-left: -100%;}
+    66%{ margin-left: -100%;}
+
+    67%{ margin-left: -200%;}
+    100%{ margin-left: -200%;}
+} */
 /* Footer */
 .contenedor .footer {
     grid-area: footer;
