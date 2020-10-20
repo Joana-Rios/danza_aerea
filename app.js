@@ -74,7 +74,7 @@ goTop.addEventListener("click", () =>{
     document.documentElement.scrollTop = 0;
 });
 
-let verAbajo = document.querySelector('.abajo');
+let verAbajo = document.querySelector('#abajo');
 verAbajo.addEventListener("click", () =>{
     document.body.scrollTop =600;
     document.documentElement.scrollTop = 600;

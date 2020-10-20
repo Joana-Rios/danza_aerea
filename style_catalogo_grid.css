@@ -377,7 +377,7 @@ body{
 .contenedor .opiniones{
     background: var(--white);
     color: var(--black);
-    height: 30rem;
+    height: 45rem;
     padding: 3em 0;
     text-align: center;
     display: flex;
@@ -453,6 +453,24 @@ body{
 }
 .Testimonio .containerT input {
     display: block;
+}
+.Testimonio .containerT .b-opinion{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    margin:auto;
+    position: relative;
+    justify-content: space-around;
+}
+.Testimonio .containerT .b-opinion button{
+    font-size: .5rem;
+    display: flex;
+    position: relative;
+    /* background: yellow; */
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .Testimonio .navigation{
     margin-top: 1rem;
@@ -552,17 +570,17 @@ body{
     .btn-menu > .fa-bars{
         display: block;
         position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 28px;
+        top: 1.25rem;
+        right: 1rem;
+        font-size: 2rem;
         cursor: pointer;
     }
     .btn-menu > .fa-bars:hover {color:var(--blue);}
     .btn-menu > fa-times {color:var(--blue);}
     .menub .list-container{
         position: absolute;
-        top: 60px;
-        left:-1000px;
+        top: 3.5rem;
+        left:-1.25rem;
         width:100%;
         height: calc(100vh-60px);
         background: #fff;
@@ -574,16 +592,16 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: 5px solid var(--blue1);
+        border-top: .31rem solid var(--blue1);
     }
     .menub .list-container .lists li{
         width: 90%;
-        margin: 10px 0px;
-        border-bottom: 1px solid var(--blue1);
+        margin: .62rem 0rem;
+        border-bottom: .063rem solid var(--blue1);
         text-align: center;
     }
     .menub .list-container .lists li a{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .menub .list-container .lists li a.active{
         background: none;
