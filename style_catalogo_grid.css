@@ -451,9 +451,9 @@ body{
     color: var(--blue);
     display: block;
 }
-.Testimonio .containerT input {
+/* .Testimonio .containerT input {
     display: block;
-}
+} */
 .Testimonio .containerT .b-opinion{
     display: flex;
     flex-direction: row;
@@ -470,9 +470,10 @@ body{
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    outline: none;
     cursor: pointer;
 }
-.Testimonio .navigation{
+/* .Testimonio .navigation{
     margin-top: 1rem;
     display: block;
     list-style: none;
@@ -507,8 +508,8 @@ body{
 #radio2:checked ~ .navigation label#radioSelect2,
 #radio3:checked ~ .navigation label#radioSelect3 {
     background: var(--blue1);
-}
-.containerT ul{
+} */
+/* .containerT ul{
     animation: cambio 10S infinite;
 }
 .slider ul:hover{
@@ -524,7 +525,7 @@ body{
 
     67%{ margin-left: -200%;}
     100%{ margin-left: -200%;}
-}
+} */
 /* Footer */
 .contenedor .pie-pag{
     grid-area: pie-pag;

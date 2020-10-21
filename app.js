@@ -2,7 +2,7 @@ let btnMenu = document.querySelector('.btn-menu');
 console.log(btnMenu);
 let menu = document.querySelector(".list-container"); //Barra de nave
 console.log(menu);
-let containerMenu = document.querySelector(".menu"); //contenedor del
+let containerMenu = document.querySelector(".menub"); //contenedor del
 console.log(containerMenu);
 let activador = true;
 
