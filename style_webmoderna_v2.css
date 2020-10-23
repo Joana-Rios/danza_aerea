@@ -99,6 +99,40 @@ body{
     font-weight: 800;
     color: var(--blue);  /* para escribir variables */
 }
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot?59a6up');
+    src:  url('./fonts/icomoon.eot?59a6up#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon.ttf?59a6up') format('truetype'),
+      url('./fonts/icomoon.woff?59a6up') format('woff'),
+      url('./fonts/icomoon.svg?59a6up#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-burgerMenu:before {
+    content: "\e900";
+}
+ 
+.menu .burger-menu {
+    display: none;
+}
 .menu .list-container{
     margin-left: 1.25rem;
 }
@@ -125,7 +159,7 @@ body{
     background: var(--blue);
     color:#fff;
 }
-.btn-menu > .fab-bars{
+.burger-menu > .fab-bars{
     display: none;
 }
 /* Menu de navegacion */
@@ -211,9 +245,9 @@ body{
 }
 
 /* acerca de nosotros  */
-.acerca-de{
-    /* background: #f2f6f5; */
-}
+/* .acerca-de{
+    background: #f2f6f5;
+} */
 /* .contenedor{
     width: 90%;
     max-width: 1000px;
@@ -703,7 +737,7 @@ body{
 
 /* media query */
 @media only screen and (max-width:900px){
-    .btn-menu > .fa-bars{
+    .burger-menu > .fa-bars{
         display: block;
         position: absolute;
         top: 1.25rem;
@@ -711,8 +745,12 @@ body{
         font-size: 2rem;
         cursor: pointer;
     }
-    .btn-menu > .fa-bars:hover{color: var(--blue);}
-    .btn-menu > fa-times {color: var(--blue);}
+    .burger-menu > .fa-bars:hover{
+        color: var(--blue);
+    }
+    .burger-menu > fa-times {
+        color: var(--blue);
+    }
     .menu .list-container{
         position: absolute;
         top: 3.5rem;
@@ -720,6 +758,10 @@ body{
         width:100%;
         height: calc(100vh-60px);
         background: #fff;
+        display: none;
+    }
+    .list-container.is-active{
+        display: block;
     }
     .menu .list-container .lists{
         width: 100%;
@@ -731,7 +773,7 @@ body{
         border-top: .31rem solid var(--blue1);
     }
     .menu .list-container .lists li{
-        display: none;
+        /* display: none; */
         width: 90%;
         margin: .62rem 0rem;
         border-bottom: .063rem solid var(--blue1);
@@ -751,6 +793,9 @@ body{
 }
 @media only screen and (max-width:773px){
     /* img header */
+    .menu .burger-menu {
+        display: block;
+    }
     .img-header .welcome h1{
         font-size: 2.5rem;
         margin-left: 6.5rem;
@@ -827,6 +872,9 @@ body{
 }
 
 @media only screen and (max-width:590px){
+    .menu .burger-menu {
+        display: block;
+    }
     .img-header .welcome h1{
         font-weight: 1.5srem;
     }
@@ -840,9 +888,11 @@ body{
         width: 2.25rem;
         font-size: 1.063rem;
     }
-    
 }
 @media only screen and (max-width:890px){
+    .menu .burger-menu {
+        display: block;
+    }
     .testimonio .box-testimonio .card-testimonio .card-img{
         width: 12.5rem;
         height: 12.5rem;
