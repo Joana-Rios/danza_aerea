@@ -3,46 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-body .products {
+.slider {
     max-width: 100%;
     width: auto;
     align-content: center;
     display: flex;
     align-items: center;
 }
-.products .left {
+/* .slider .left {
     display: flex;
     justify-content: left;
 }
-.products .iconLeft {
+.slider .iconLeft {
     width: 80%;
     height: 80%;
     margin: auto;     
 }
-.products .iconLeft:hover { 
+.slider .iconLeft:hover { 
     background-color: #c7c1c1;
     border-radius: 25%;
 }
-.products .right {
+.slider .right {
     display: flex;
     justify-content: right;
 }
-.products .iconRight {
+.slider .iconRight {
     width: 80%;
     height: 80%;
     margin: auto; 
 }
-.products .iconRight:hover { 
+.slider .iconRight:hover { 
     background-color: #c7c1c1;
     border-radius: 25%;
-}
-.products .slider{
+} */
+.slider{
     width: 90%;
     height: 25rem;
     margin: auto;
     overflow:hidden;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 .slider ul{
