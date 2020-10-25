@@ -76,6 +76,9 @@ body{
     font-weight: 800;
     color: var(--blue);  /* para escribir variables */
 }
+.menub .burger-menu {
+    display: none;
+}
 .menub .list-container{
     margin-left: 20px;
 }
@@ -102,13 +105,16 @@ body{
     background: var(--blue);
     color:#fff;
 }
-.btn-menu > .fab-bars{
+.burger-menu > .fab-bars{
+    display: none;
+}
+.menub i {
     display: none;
 }
 .contenedor{
     width: 100%;
     /* max-width: 1000px; */
-    margin: 20px 20px;
+    margin: 20px 0px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3 , 1fr) ; /*para indicar cuantas col. se necesita */
@@ -129,7 +135,7 @@ body{
 .contenedor .diseno,
 .contenedor .talla,
 .contenedor .pfinal,
-.contenedor .c-completo, /*CUIDADO DANIEL*/
+.contenedor .c-completo,
 .contenedor .opiniones {
     background: var(--blue);
     padding: 20px;
@@ -299,6 +305,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 0%;
 }
 .c-completo .left {
     display: flex;
@@ -329,7 +336,7 @@ body{
 .carrusel {
     width: 90%;
     /* overflow: hidden; desbordamiento de la seccion scroll: barras de desp, auto: barra ver,hidden: oculto */
-    padding: 0px 0px; /*CUIDADO DANIEL*/
+    /* padding: 0px 0px; CUIDADO DANIEL */
     position: relative; /* a partir de bloque, absolute: a partir del margen, sticky: pagajoso*/
     margin: auto;
     overflow:hidden;
@@ -602,7 +609,7 @@ body{
     }
 }
 @media only screen and (max-width:900px){
-    .btn-menu > .fa-bars{
+    .burger-menu > .fa-bars{
         display: block;
         position: absolute;
         top: 1.25rem;
@@ -610,8 +617,8 @@ body{
         font-size: 2rem;
         cursor: pointer;
     }
-    .btn-menu > .fa-bars:hover {color:var(--blue);}
-    .btn-menu > fa-times {color:var(--blue);}
+    .burger-menu > .fa-bars:hover {color:var(--blue);}
+    .burger-menu > fa-times {color:var(--blue);}
     .menub .list-container{
         position: absolute;
         top: 3.5rem;
