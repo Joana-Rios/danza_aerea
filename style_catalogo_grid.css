@@ -129,7 +129,7 @@ body{
 .contenedor .diseno,
 .contenedor .talla,
 .contenedor .pfinal,
-.contenedor .c-completo,
+.contenedor .c-completo, /*CUIDADO DANIEL*/
 .contenedor .opiniones {
     background: var(--blue);
     padding: 20px;
@@ -296,21 +296,54 @@ body{
     grid-area: c-completo;
     height: 20rem;
     background: var(--white);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.c-completo .left {
+    display: flex;
+    justify-content: left;
+}
+.left .iconLeft {
+    width: 80%;
+    height: 80%;
+    margin: auto;     
+}
+.left .iconLeft:hover { 
+    background-color: #c7c1c1;
+    border-radius: 25%;
+}
+.c-completo .right {
+    display: flex;
+    justify-content: right;
+}
+.right .iconRight {
+    width: 80%;
+    height: 80%;
+    margin: auto; 
+}
+.right .iconRight:hover { 
+    background-color: #c7c1c1;
+    border-radius: 25%;
 }
 .carrusel {
     width: 90%;
     /* overflow: hidden; desbordamiento de la seccion scroll: barras de desp, auto: barra ver,hidden: oculto */
-    padding: 0px 30px;
+    padding: 0px 0px; /*CUIDADO DANIEL*/
     position: relative; /* a partir de bloque, absolute: a partir del margen, sticky: pagajoso*/
+    margin: auto;
+    overflow:hidden;
 }
 .carrusel__container {
     white-space: nowrap;
-    margin: 0px;
+    margin: auto;
     padding-bottom: 10px; /* Espacio abajo, right, left top */
+    width: 300%;
+    display: flex;
 }
 .carrusel-item{
     background-color: none;
-    width: 16.7%;
+    width: auto;
     height: 300px;
     overflow: hidden;
     display: inline-block;
@@ -319,6 +352,7 @@ body{
     transition: 450ms all;
     transform-origin: center left;
     border-radius: 10px;
+    list-style: none;
 }
 .carrusel-item:hover ~ .carrusel-item img{
     transform: translate3d(50px,0,0); /* Hace que se recorra la imagen para mostrar la principal */
