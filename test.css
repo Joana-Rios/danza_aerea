@@ -5,9 +5,10 @@
 }
 .products {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
+    margin-top: 10%;
 }
 .products .left {
     display: flex;
@@ -37,19 +38,19 @@
 }
 .products .slider{
     width: 90%;
-    height: 20%;
+    height: 20%; /*los item se ajustan solos, no importa height*/
     margin: auto;
     overflow:hidden;
 }
 .slider ul{
     display: flex;
     padding: 0;
-    width: 300%;
+    width: 400%;
     height: 20%;
-    animation: cambio2 10S infinite alternate;
+    /* animation: cambio2 10S infinite alternate; */
 }
 .slider ul:hover{
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
     cursor: pointer;
 }
 .slider li {
