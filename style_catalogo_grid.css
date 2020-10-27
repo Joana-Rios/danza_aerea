@@ -174,7 +174,9 @@ body{
     cursor:pointer;
     object-fit: cover;
     border-radius:20%;
-    margin-left:50px;
+    /* margin-left:50px; */
+    display: row;
+    justify-content: center;
 }
 /* Paso 2 elige tu diseño */
 .contenedor .diseno{
@@ -189,7 +191,10 @@ body{
     cursor:pointer;
     object-fit: cover;
     border-radius:20%;
-    margin-left:50px;
+    /* margin-left:50px; */
+    /* flex-direction: row; */
+    text-align: center;
+    
 }
 .diseno h2{
     font-size: 30px;
@@ -207,12 +212,13 @@ body{
 .contenedor .talla{
     grid-area: talla;
     background: var(--white);
+    margin-left: 3rem;
 }
 .talla h1{
     font-size: 40px;
     color: var(--blue);
     font-weight: 800;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 .talla h2{
@@ -230,26 +236,66 @@ body{
 .talla label{
     color: var(--blue);
     margin-left: 50px;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
     font-size: 18px;
+    display: flex;
+    justify-content: left;
 }
-.tallas{
-    font-size: 15px;
-    color: var(--blue);
+.talla .tallas button{
+    margin: .7rem;
+    margin-top: -2rem;
+    display: flex;
+    margin-left: .5rem;
+    position: relative;
+}
+.talla .tallas{
+    width: 2rem;
+    height: 2rem;
+    font-size:1rem;
+    margin-left: .5rem;
+    font-weight: 800;
+    text-align: center;
+    background: white;
+    cursor:pointer;
+    border-radius: 20%;
+    color:var(--blue);
+    border: .1rem solid var(--blue);
 }
 .talla .color{
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.talla .color img{
-    width: 50px;
-    height:40px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+.talla .color button{
+    margin: .7rem;
+    margin-top: -2rem;
+    border-radius: 20%;
+    display: flex;
+    position: relative;
+}
+.talla .color .white{
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    display: flex;
+    position: relative;
     cursor:pointer;
-    object-fit: cover;
-    border-radius:20%;
-    margin-left:50px;
+}
+.talla .color .black{
+    width: 2rem;
+    height: 2rem;
+    background: black;
+    cursor:pointer;
+    border: .1rem solid black;
+}
+.talla .color .grey{
+    width: 2rem;
+    height: 2rem;
+    background: grey;
+    position: relative;
+    cursor:pointer;
+    border: .1rem solid grey;
 }
 /* Visualiza tu prodcuto final */
 .contenedor .pfinal{
@@ -466,12 +512,15 @@ body{
     font-size: .5rem;
     display: flex;
     position: relative;
-    /* background: yellow; */
+    /* background: var(--blue); */
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
+}
+.Testimonio .containerT .b-opinion .opione .onclick{
+    background: blue;
 }
 /* .Testimonio .navigation{
     margin-top: 1rem;
@@ -614,10 +663,10 @@ body{
     }
 }
 .pie-pag .social .fab{
-    width: 25px;
-    height: 25px;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    font-size:30px;
+    font-size:2rem;
 }
 .pie-pag .social{
     position: fixed;

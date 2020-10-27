@@ -128,6 +128,9 @@ body{
 .btn-menu > .fab-bars{
     display: none;
 }
+.menu .btn-menu{
+    display: none;
+}
 /* Menu de navegacion */
 /* img header */
 .img-header{
@@ -679,7 +682,7 @@ body{
     color: var(--blue);
 }
 .footer .footer-content .footer-text{
-    /* position: absolute; */
+    position: absolute;
     bottom:0px;
     left: 0;
     width: 100%;
@@ -790,43 +793,48 @@ body{
         width:calc(40% - .5rem);
     }
 }
-.fab{
+.footer .fab{
     width: 3.1rem;
     height: 2.5rem;
     text-align: center;
-    font-size:1.86rem;
+    font-size:1.8rem;
+    margin-top:-3rem;
 }
-.social{
+.footer .social{
     position: fixed;
     left: -1.5rem;
     top:31.21rem;
 }
-.social ul{
+.footer .social ul{
     list-style: none;
 }
-.social a{
+.footer .social a{
     display: inline-block;
     text-decoration: none;
     color:#fff;
     padding: .62rem .93rem;
     z-index: 0;
     transition: 0.01s ease;
+    /* margin-top:-2rem; */
 }
-.fa-facebook-f{
+.footer .social .fa-facebook-f{
     background: #3b5998;
     border-top-right-radius: 20%;
     color: var(--white);
 }
-.fa-whatsapp{
+.footer .social .fa-whatsapp{
     background: #25d366;
     border-bottom-right-radius: 20%;
     color: var(--white);
 }
-.social a:hover{
+.footer .social a:hover{
     padding:.52rem 1.56rem;
 }
 
 @media only screen and (max-width:590px){
+    .menu .btn-menu{
+        display: block;
+    }
     .img-header .welcome h1{
         font-weight: 1.5srem;
     }
@@ -843,6 +851,9 @@ body{
     
 }
 @media only screen and (max-width:890px){
+    .menu .btn-menu{
+        display: block;
+    }
     .testimonio .box-testimonio .card-testimonio .card-img{
         width: 12.5rem;
         height: 12.5rem;
@@ -868,6 +879,25 @@ body{
     }
     .footer .formulario-content #formulario input{
         width: 100%;
+    }
+    .footer .formulario-content #formulario  textarea{
+        width: 100%;
+    }
+}
+
+/* REVISAR COMO ARREGAR EL FORMULARIO CUANDO ES MENOR A 590PX */
+@media only screen and (max-width:590px){
+    .footer .footer-text{
+        margin-bottom:-2.9rem;
+    }
+    .footer .formulario-content {
+        width: 20%;
+        padding: 40px;
+        margin-bottom: 15rem;
+    }
+    .footer .formulario-content #formulario input{
+        width: 100%;
+        margin-bottom: 5rem;
     }
     .footer .formulario-content #formulario  textarea{
         width: 100%;
