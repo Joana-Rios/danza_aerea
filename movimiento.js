@@ -19,14 +19,14 @@ function infiniteMovi(value) {
     // console.log(index2)
     // console.log(index3)
     // let valueBotton = document.getElementById(value);
-    document.getElementById(value).style.background = "green";
+    document.getElementById(value).style.background = "#0779e4";
     document.getElementById(index2.toString()).style.background = "none";
     document.getElementById(index3.toString()).style.background = "none";
     // console.log(valueBotton);
 }
 window.onload = function() {
     let counter = 0;
-    document.getElementById("1").style.background = "green";
+    document.getElementById("1").style.background = "#0779e4";
     setInterval(function () { 
                                 counter++
                                 let valueBotton = counter % 3 + 1
