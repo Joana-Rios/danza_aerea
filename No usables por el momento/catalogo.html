@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style_catalogo.css">
+    <title>catalogo</title>
+</head>
+<body>
+    <div class="go-top">
+        <span id="link_nosotros"><i class="fas fa-angle-up"></i></span>
+    </div>
+    <header id="header">
+        <nav class="menub">
+            <div class="logo-box">
+                <h1><a href="#">Danza aerea</a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="./index.html" class="activo">Inicio</a></li>
+                    <li><a href="./index.html">Nosotros</a></li>
+                    <li><a href="./index.html#link_productos">Productos</a></li>
+                    <li><a href="./index.html#link_testi">Testimonios</a></li>
+                    <li><a href="./index.html#link_formulario">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu">
+            <header class="text-center">
+                <h1 class="red-text" style="margin-right:auto;margin-left:auto;">Nuestros productos</h1>
+            </header> 
+            <div class="productos">
+                <div class="row center-xs">
+                    <div class="col-xs-10 col-sm-6 col-md-4 product">
+                        <div class="card">
+                            <img src="./img/iteam1.jpg" alt="">
+                            <h3>Blusa roja</h3>
+                            <p>$300 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/iteam3.jpg" alt="">
+                            <h3>Blusa blanca</h3>
+                            <p>$300 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/iteam4.jpg" alt="">
+                            <h3>Sudarera mixta</h3>
+                            <p>$600 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/iteam5.jpg" alt="">
+                            <h3>Taza</h3>
+                            <p>$100 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/iteam6.jpg" alt="">
+                            <h3>Taza 2</h3>
+                            <p>$100 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                        <div class="card">
+                            <img src="./img/iteam7.jpg" alt="">
+                            <h3>Llavero</h3>
+                            <p>$100 MXN</p>
+                            <button id="abajo">Comprar ahora</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>  
+        <!-- Testimonios -->
+        <section class="Testimonio" id="link_testi">
+            <div class="test-title">
+                <h2>Opiniones</h2>
+                <hr>
+            </div>
+            <div class="containerT" id="testimonio" >
+                <h2>Nuestros <b>Usuarios</h2>
+                <hr>
+                <input type="radio" name="slides" id="radio1" checked>
+                <input type="radio" name="slides" id="radio2">
+                <input type="radio" name="slides" id="radio3">
+                <ul class="slides">
+                    <li class="slide">
+                        <p>
+                            <q>Usuario1 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png" >
+                                Cristiano Cedano porque no aparece 
+                            </span>
+                        </p>
+                    </li>
+        
+                    <li class="slide">
+                        <p>
+                            <q>Usuario2 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png">
+                                Cristiano Cedano que pedo 
+                            </span>
+                        </p>
+                    </li>
+        
+                    <li class="slide">
+                        <p>
+                            <q>Usuario3 con experiencia.</q>
+                            <span class= "author">
+                                <img src="./img/icono_feliz.png" alt="">
+                                Cristiano Cedano
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="navigation">
+                    <label for="radio1" id="radioSelect1"></label>
+                    <label for="radio2" id="radioSelect2"></label>
+                    <label for="radio3" id="radioSelect3"></label>
+                </div>
+            </div>  
+              
+        </section>
+    <footer class=footer>
+        <div class="social">
+            <ul>
+                <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>  
+                <li><a href="https://api.whatsapp.com/send?phone=525541178087&text=Necesito%20mas%20información"></a><i class="fab fa-whatsapp"></i></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>&copy; DANZA AEREA | DERECHOS RESERVADOS | </p>
+            <a href="./TYC.html">   TERMINOS Y CONDICIONES</a>
+            <p> | </p>
+            <a href="./PRIVACIDAD.html">   AVISO DE PRIVACIDAD</a>
+        </div> 
+    </footer>  
+    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>  
+</body>
+</html>
