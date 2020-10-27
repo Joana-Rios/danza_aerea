@@ -3,30 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
-.slider{
-    width: 40%;
-    height: 20rem;
+.products {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+.products .left {
+    display: flex;
+    justify-content: left;
+}
+.left .iconLeft {
+    width: 80%;
+    height: 80%;
+    margin: auto;     
+}
+.left .iconLeft:hover { 
+    background-color: #c7c1c1;
+    border-radius: 25%;
+}
+.products .right {
+    display: flex;
+    justify-content: right;
+}
+.right .iconRight {
+    width: 80%;
+    height: 80%;
+    margin: auto; 
+}
+.right .iconRight:hover { 
+    background-color: #c7c1c1;
+    border-radius: 25%;
+}
+.products .slider{
+    width: 90%;
+    height: 20%; /*los item se ajustan solos, no importa height*/
     margin: auto;
     overflow:hidden;
-    margin-top: 10%;
 }
 .slider ul{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: cambio 10S infinite alternate;
+    height: 20%;
+    /* animation: cambio2 10S infinite alternate; */
 }
 .slider ul:hover{
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
     cursor: pointer;
 }
 .slider li {
-    width: 100%;
+    width: 25%;
     list-style: none;
 }
-.slider img{
+.slider ul img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 @keyframes cambio{
