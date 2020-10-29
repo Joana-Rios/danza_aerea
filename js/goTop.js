@@ -1,5 +1,5 @@
 //efectos scroll//
-
+let containerMenu = document.querySelector(".menu");
 let prevScrollpos =window.pageYOffset;
 let  goTop = document.querySelector(".go-top");
 window.onscroll = () => {                                                                                                                                                                                                                                            
