@@ -771,11 +771,7 @@ body{
 }
 
 @media only screen and (max-width:590px){
-<<<<<<< HEAD
-    .menu .btn-menu{
-=======
     .menu .burger-menu {
->>>>>>> d89fb99718ed8d1513c35e2e1ce02ca7790407ce
         display: block;
     }
     .img-header .welcome h1{
@@ -793,11 +789,7 @@ body{
     }
 }
 @media only screen and (max-width:890px){
-<<<<<<< HEAD
-    .menu .btn-menu{
-=======
     .menu .burger-menu {
->>>>>>> d89fb99718ed8d1513c35e2e1ce02ca7790407ce
         display: block;
     }
     .testimonio .box-testimonio .card-testimonio .card-img{
