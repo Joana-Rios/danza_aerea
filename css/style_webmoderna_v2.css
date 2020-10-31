@@ -533,7 +533,7 @@ body{
 }
 .footer .footer-content .formulario-content{
     width: 50%;
-    height: 70%;
+    height: auto;
     background:#fff;
     border-radius: 1.25rem;
     border: 2px solid var(--blue1);
@@ -632,15 +632,69 @@ body{
     margin-right: 5px;
 }
 
-/* media query */
-@media only screen and (max-width:900px){
+.footer .fab{
+    width: 3.1rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size:1.8rem;
+    margin-top:-3rem;
+}
+.footer .social{
+    position: fixed;
+    left: -1.5rem;
+    top:31.21rem;
+}
+.footer .social ul{
+    list-style: none;
+}
+.footer .social a{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding: .62rem .93rem;
+    z-index: 0;
+    transition: 0.01s ease;
+    /* margin-top:-2rem; */
+}
+.footer .social .fa-facebook-f{
+    background: #3b5998;
+    border-top-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social .fa-whatsapp{
+    background: #25d366;
+    border-bottom-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social a:hover{
+    padding:.52rem 1.56rem;
+}
+@media only screen and (max-width:480px){
+
+}
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:480px){
+    
+}
+@media only screen and (max-width:320px){
+    body{
+        width: auto;
+    }
+    .go-top {
+        left: 17.5rem;
+        bottom: 2.5rem;
+    }
+    .menu .burger-menu {
+        display: block;
+    }
     .burger-menu > .fa-bars{
         display: block;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.3rem;
         position: absolute;
-        top: 1.25rem;
-        right: 1rem;
-        font-size: 2rem;
-        cursor: pointer;
     }
     .burger-menu > .fa-bars:hover{
         color: var(--blue);
@@ -687,157 +741,116 @@ body{
         background: none;
         color: var(--blue1);
     }
-}
-@media only screen and (max-width:773px){
-    /* img header */
-    .menu .burger-menu {
-        display: block;
+    .img-header .welcome {
+        text-align: center;
     }
     .img-header .welcome h1{
-        font-size: 2.5rem;
-        margin-left: 6.5rem;
-    }
-    .img-header .welcome > button{
-        width: 7.12rem;
-        font-size: 1rem;
-    }
-    /* acerca de nosotros */
-    
-    .acerca-de .info-container .about-gallery{
-        flex-direction: column;
-    
-    }
-    
-    .acerca-de .info-container .about-gallery img{ 
-        width: 100%;
-        
-    }
-    /* nuestro proyecto */
-    .our-projects .container-project{
-        width: 90%;
-        margin:auto;
-        padding-top:6.25rem;
-        
-    }
-    .our-projects .container-project .project-title h2{
-        font-size: 1.7rem;
-        
-    }
-    .our-projects .container-project .project-img img{
-        width: 100%;        
-        margin-bottom: 1rem;
-
-    }
-    .our-projects .container-project .project-img a{
-        width:calc(40% - .5rem);
-    }
-}
-.footer .fab{
-    width: 3.1rem;
-    height: 2.5rem;
-    text-align: center;
-    font-size:1.8rem;
-    margin-top:-3rem;
-}
-.footer .social{
-    position: fixed;
-    left: -1.5rem;
-    top:31.21rem;
-}
-.footer .social ul{
-    list-style: none;
-}
-.footer .social a{
-    display: inline-block;
-    text-decoration: none;
-    color:#fff;
-    padding: .62rem .93rem;
-    z-index: 0;
-    transition: 0.01s ease;
-    /* margin-top:-2rem; */
-}
-.footer .social .fa-facebook-f{
-    background: #3b5998;
-    border-top-right-radius: 20%;
-    color: var(--white);
-}
-.footer .social .fa-whatsapp{
-    background: #25d366;
-    border-bottom-right-radius: 20%;
-    color: var(--white);
-}
-.footer .social a:hover{
-    padding:.52rem 1.56rem;
-}
-
-@media only screen and (max-width:590px){
-    .menu .burger-menu {
-        display: block;
-    }
-    .img-header .welcome h1{
-        font-weight: 1.5srem;
-    }
-    .img-header .welcome hr{
-        width: 8.25rem;
+        font-size: 2rem;
+        text-align: center;
     }
     .img-header .welcome p {
-        font-size: 1.063rem;
+        font-weight: 700;
     }
-    .img-header .welcome > button{
-        width: 2.25rem;
-        font-size: 1.063rem;
+    .img-header .welcome hr {
+        width: 80%;
     }
-}
-@media only screen and (max-width:890px){
-    .menu .burger-menu {
-        display: block;
+    .img-header .welcome a > button{
+        width: 9rem;
+        font-size: 1rem;
     }
-    .testimonio .box-testimonio .card-testimonio .card-img{
-        width: 12.5rem;
-        height: 12.5rem;
+    .contenedor hr {
+        width: 80%;
     }
-    .testimonio .box-testimonio .card-testimonio{
+    /* Los pasos de la dinamica estan integrados arriba */
+    .galeria{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        border:none;
+    }
+    .galeria .imagenes{
+        width: 50%;
+        height: 30rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .galeria #imagen1, #imagen4, #imagen5{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .skew-abajo {
+        border-width: 0;
+    }
+    .our-projects {
+        height: auto;
+    }
+    .our-projects .container-project {
+        width: 70%;
+        margin: auto;
+        /* padding-top: 6.25rem; */
+    }
+    .our-projects .container-project {
+        width: 90%;
+        margin: auto;
+        padding-top: ;
+    }
+    .our-projects .container-project .project-title {
         width: 100%;
     }
-    .testimonio .box-testimonio .card-testimonio .testimonio-text h4{
-        font-size: 1.56rem;
+    .our-projects .container-project .project-title h2 {
+        font-size: 2.5rem;
     }
-    .testimonio .box-testimonio .card-testimonio .testimonio-text p{
-        font-size: 1.06rem;
-        line-height: 1.86rem;
+    .our-projects .container-project .project-img {
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
-}
-@media only screen and (max-width:900px){
-    .footer .footer-text{
-        margin-bottom:-2.9rem;
+    .our-projects .container-project .project-img a {
+        width: calc(40% - .62rem);
     }
-    .footer .formulario-content {
-        width: 10%;
-        padding: 40px;
+    .our-projects .container-project .project-img img {
+        width: 100%;
+        margin: 0rem;
     }
-    .footer .formulario-content #formulario input{
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer .footer-content {
+        padding-top: 6.25rem;
+    }
+    .footer .footer-content .footer-title {
         width: 100%;
     }
-    .footer .formulario-content #formulario  textarea{
+    .footer .footer-content .footer-title hr {
+        width: 60%;
+    }
+    .footer .footer-content .footer-title p {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .footer .footer-content .formulario-content {
         width: 100%;
+        height: auto;
     }
-}
-
-/* REVISAR COMO ARREGAR EL FORMULARIO CUANDO ES MENOR A 590PX */
-@media only screen and (max-width:590px){
-    .footer .footer-text{
-        margin-bottom:-2.9rem;
+    .footer .footer-content .formulario-content #formulario label, input, p, textarea{
+        font-size: 1rem;
+        margin-top: 0rem;
     }
-    .footer .formulario-content {
-        width: 20%;
-        padding: 40px;
-        margin-bottom: 15rem;
+    .footer .footer-content .footer-text {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        text-align: center;
     }
-    .footer .formulario-content #formulario input{
-        width: 100%;
-        margin-bottom: 5rem;
+    .footer .footer-content .footer-text p{
+        font-size: 0.8rem;
     }
-    .footer .formulario-content #formulario  textarea{
-        width: 100%;
+    .footer .footer-text a {
+        font-size: 0.8rem
     }
 }
