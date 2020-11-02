@@ -737,7 +737,7 @@ body{
     height: 2.5rem;
     text-align: center;
     font-size:1.8rem;
-    margin-top:-3rem;
+    margin-top:-1.8rem;
 }
 .footer .social{
     position: fixed;
@@ -771,11 +771,7 @@ body{
 }
 
 @media only screen and (max-width:590px){
-<<<<<<< HEAD
-    .menu .btn-menu{
-=======
     .menu .burger-menu {
->>>>>>> d89fb99718ed8d1513c35e2e1ce02ca7790407ce
         display: block;
     }
     .img-header .welcome h1{
