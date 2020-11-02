@@ -112,7 +112,7 @@ body{
     display: none;
 } */
 .contenedor{
-    width: 100%;
+    width: auto;
     /* max-width: 1000px; */
     margin: 20px 0px;
     display: grid;
@@ -306,7 +306,9 @@ body{
 /* Visualiza tu prodcuto final */
 .contenedor .pfinal{
     grid-column: 3 / 4;
-    background: var(--blue1);
+    background: var(--white);
+    border-radius: 20px;
+    border: .2rem groove var(--blue);
     /* text-align: center;
     display: flex;
     align-items: center;
@@ -317,7 +319,14 @@ body{
 }
 .pfinal h3{
     font-size: 30px;
-    color: var(--white);
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pfinal h4{
+    font-size: 15px;
+    color: var(--blue);
     font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
@@ -326,7 +335,7 @@ body{
     width: 300px;
     height: 300px;
     font-size: 30px;
-    background: green;
+    background: white;
     position: fixed;
     right: 10px;
     /* top:5rem; */
@@ -336,6 +345,7 @@ body{
 .contenedor .pfinal .flotante .flota img{
     width: 300px;
     height: 300px;
+    border-radius: 30px;
     /* right: 100px; */
     /* grid-area: pfinal; */
 }
@@ -354,7 +364,8 @@ body{
     transition: 0.2s;
     align-content: right;
     font-family: 'Cinzel', serif;
-    margin-top: 600px;
+    /* margin-top: 850px; */
+    margin-left: 80px; 
 }
 .pfinal >button:hover{
     transform: translateY(2px);
@@ -665,19 +676,237 @@ body{
     margin-left: 4px;
     margin-right: 5px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:320px){
+    .body{
+        width: auto;
+        margin: 20px 0px;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr) ; /*para indicar cuantas col. se necesita*/
+        grid-template-rows: repeat(8, auto);
+    }
     .contenedor{
         grid-template-areas: "header header header"
                          "contenido contenido contenido"
-                         "pfinal pfina pfinal"
                          "diseno diseno diseno"
                          "talla talla talla"
+                         "pfinal pfinal pfinal"
                          "c-completo c-completo c-completo"
                          "opiniones opiniones opiniones"
                          "footer footer footer";
     }
+    /* .contenedor > div,
+    .contenedor .header,
+    .contenedor .contenido,
+    .contenedor .diseno,
+    .contenedor .talla,
+    .contenedor .pfinal,
+    .contenedor .c-completo,
+    .contenedor .opiniones {
+        background: var(--blue);
+        padding: 10px;
+        border-radius: 4px;
+        width: auto; */
+    .go-top {
+        left: 85%;
+        bottom: 2.5rem;
+    }
+    .menu .burger-menu {
+        display: block;
+    }
+    .menu .logo-box h1 a {
+        font-size: 1.8rem;
+    }
+    .burger-menu > .fa-bars{
+        display: block;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.3rem;
+        position: absolute;
+    }
+    .burger-menu > .fa-bars:hover{
+        color: var(--blue);
+    }
+    .burger-menu > fa-times {
+        color: var(--blue);
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 3.5rem;
+        left:-1.25rem;
+        width:100%;
+        height: calc(100vh-60px);
+        background: #fff;
+        display: none;
+    }
+    .list-container.is-active{
+        display: block;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: .31rem solid var(--blue1);
+    }
+    .menu .list-container .lists li{
+        /* display: none; */
+        width: 90%;
+        margin: .62rem 0rem;
+        border-bottom: .063rem solid var(--blue1);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 1.25rem;
+    }
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--blue1);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--blue1);
+    }
+    .contenedor .contenido{
+        width: 300%;
+    }
+    .contenedor .contenido h1{
+        font-size: 60px;
+    }
+    .contenedor .contenido h2{
+        font-size: 50px;
+    }
+    .contenedor .contenido p{
+        font-size: 45px;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+    }
+    .product img{
+        width: 150px;
+        height:140px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        cursor:pointer;
+        object-fit: cover;
+        border-radius:20%; 
+    }
+    .contenedor .diseno{
+        width: 300%;
+    }
+    .contenedor .diseno h2{
+        font-size: 50px;
+    }
+    .contenedor .diseno p {
+        font-size: 45px;
+    }
+    .diseno .diseño{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor .talla{
+        width: 300%;
+    }
+    .contenedor .talla h2{
+        font-size: 50px;
+    }
+    .contenedor .talla p{
+        font-size: 45px;
+    }
+    .talla .tallas{
+        display: row;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .talla .color {
+        margin-right: -500px;
+    }
+    
+    .contenedor .pfinal {
+        justify-items: center;
+        margin-left: 350px;
+        margin-bottom: 20px;
+        height: 700px;
+        width: 500px;
+    }
+    .contenedor .pfinal h3{
+        font-size: 40px;
+    }
+    .contenedor .pfinal h4{
+        font-size: 30px;
+    }
+    .contenedor .pfinal .flotante{
+        width: 300px;
+        height: 300px;
+        font-size: 30px;
+        background: white;
+        position: relative;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top:20px
+    }
+    .contenedor .pfinal .flotante .flota img{
+        width: 300px;
+        height:300px;
+        border-radius: 20px;   
+    }
+    .pfinal button{
+        width: 200px;
+        height: 60px;
+        background:linear-gradient(80deg, var(--blue), var(--white));
+        border-radius: 24px;
+        border: 1px solid var(--blue);
+        outline: none;
+        font-size:15px;
+        font-weight: 700;
+        color:var(--black);
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s;
+        align-content: right;
+        font-family: 'Cinzel', serif;
+        /* margin-top: 850px; */
+        margin-left: 120px; 
+        margin-top: 100px;
+    }
+    .pfinal >button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+    }
+    .pfinal #comprafinal {
+        color: black;
+    }
+    .contenedor .c-completo{
+        width: 300%;
+    }
+    .contenedor .c-completo h3{
+        font-size: 30px;
+    }
+    .contenedor .c-completo p{
+        font-size: 25px;
+    }
+    /* .contenedor .c-completo button{
+        font-size: 20px;
+    } */
+    .contenedor .opiniones{
+        width: 300%;
+    }
+    .contenedor .opiniones h2{
+        font-size: 40px;
+    }
+    .contenedor .opiniones q{
+        font-size: 35px;
+    }
+    .Testimonio .containerT li span.author{
+        font-size: 30px;
+    }
+    
 }
-@media only screen and (max-width:900px){
+/* @media only screen and (max-width:900px){
     .burger-menu > .fa-bars{
         display: block;
         position: absolute;
@@ -730,13 +959,13 @@ body{
         background: none;
         color: var(--blue1);
     }
-}
+}*/
 .pie-pag .social .fab{
     width: 3rem;
     height: 3rem;
     text-align: center;
     font-size:2rem;
-}
+} 
 .pie-pag .social{
     position: fixed;
     left: -15px;
