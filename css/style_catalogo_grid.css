@@ -180,9 +180,9 @@ body{
     cursor:pointer;
     object-fit: cover;
     border-radius:20%;
-    /* margin-left:50px; */
-    display: row;
-    justify-content: center;
+    margin-left:75px;
+    /* display: row; */
+    /* justify-content: center; */
 }
 /* Paso 2 elige tu diseño */
 .contenedor .diseno{
