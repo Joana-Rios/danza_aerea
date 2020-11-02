@@ -977,8 +977,53 @@ body{
     .galeria #imagen1, #imagen4, #imagen5{
         display: none;
     }
+<<<<<<< HEAD
+}
+.footer .fab{
+    width: 3.1rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size:1.8rem;
+    margin-top:-1.8rem;
+}
+.footer .social{
+    position: fixed;
+    left: -1.5rem;
+    top:31.21rem;
+}
+.footer .social ul{
+    list-style: none;
+}
+.footer .social a{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding: .62rem .93rem;
+    z-index: 0;
+    transition: 0.01s ease;
+    /* margin-top:-2rem; */
+}
+.footer .social .fa-facebook-f{
+    background: #3b5998;
+    border-top-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social .fa-whatsapp{
+    background: #25d366;
+    border-bottom-right-radius: 20%;
+    color: var(--white);
+}
+.footer .social a:hover{
+    padding:.52rem 1.56rem;
+}
+
+@media only screen and (max-width:590px){
+    .menu .burger-menu {
+        display: block;
+=======
     .our-projects {
         height: auto;
+>>>>>>> 6da795fa64b6e3afc3134df0909273b9fdc6be49
     }
     .our-projects .container-project {
         width: 70%;

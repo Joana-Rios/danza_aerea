@@ -180,9 +180,9 @@ body{
     cursor:pointer;
     object-fit: cover;
     border-radius:20%;
-    /* margin-left:50px; */
-    display: row;
-    justify-content: center;
+    margin-left:75px;
+    /* display: row; */
+    /* justify-content: center; */
 }
 /* Paso 2 elige tu diseño */
 .contenedor .diseno{
@@ -329,8 +329,8 @@ body{
     background: green;
     position: fixed;
     right: 10px;
-    /* top:150px; */
-    /* bottom: 450px; */
+    /* top:5rem; */
+    /* bottom: 250px; */
     margin: 10px 80px;
 }
 .contenedor .pfinal .flotante .flota img{
