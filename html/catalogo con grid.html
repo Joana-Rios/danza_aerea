@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style_catalogo_grid.css">
     <script src="../js/movimiento.js"></script>
-    <title>catalogo con grid</title>
+    <title>Compra</title>
 </head>
 <body>
     <div class="go-top">
@@ -17,7 +17,7 @@
         <header  id="header" class="header">
             <nav class="menu">
                 <div class="logo-box">
-                    <h1><a href="#">Danza aerea</a></h1>
+                    <h1><a href="#">Style in the air</a></h1>
                     <span class="burger-menu" id="burger-menu">
                         <i class="fas fa-bars"></i>
                     </span>
@@ -62,31 +62,24 @@
         <div class="talla" id="size">
             <h2>Paso 3</h2>
             <p>Elige talla y color</p>
-            <!-- <h3>Talla</h3> -->
-            <!-- <p>Talla</p> -->
-            <!-- <select name="tallas" id="talla">
-                <option value="s">Small</option>
-                <option value="m">Medium</option>
-                <option value="l">Large</option>
-            </select> -->
-            <button class="tallas" type="button" id="slim">S</button>
-            <button class="tallas" type="button" id="medium">M</button>
-            <button class="tallas" type="button" id="large">L</button>
-        <div class="color" id="color">
-            <button class="white" type="button" id="white"></button>
-            <button class="black" type="button" id="black"></button>
-            <button class="grey" type="button" id="grey"></button>
-        </div>
+            <div class="size">
+                <button class="tallas" type="button" id="slim">S</button>
+                <button class="tallas" type="button" id="medium">M</button>
+                <button class="tallas" type="button" id="large">L</button>
+            </div>
+            <div class="color" id="color">
+                <button class="white" type="button" id="white"></button>
+                <button class="black" type="button" id="black"></button>
+                <button class="grey" type="button" id="grey"></button>
+            </div>
         </div>
         <!-- Visualizacion del prodcuto final -->
         <div class="pfinal">                
             <h3>Visualiza tu diseño</h3>
             <h4>Tu diseño esta quedando cool</h4>
             <div class="flotante">
-                <div class="flota">
-                    <img src="../img/t-shirt.jpg" alt="">
-                    <p id="comprafinal"></p>
-                </div>
+                <img src="../img/t-shirt.jpg" alt="">
+                <p id="comprafinal"></p>
             </div>
             <button>Comprar ahora</button>
         </div>
