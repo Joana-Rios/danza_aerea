@@ -977,6 +977,81 @@ body{
     .galeria #imagen1, #imagen4, #imagen5{
         display: none;
     }
+    .our-projects {
+        height: auto;
+    }
+    .our-projects .container-project {
+        width: 70%;
+        margin: auto;
+        /* padding-top: 6.25rem; */
+    }
+    .our-projects .container-project {
+        width: 90%;
+        margin: auto;
+        /* padding-top: ; */
+        padding-bottom: 3rem;
+    }
+    .our-projects .container-project .project-title {
+        width: 100%;
+    }
+    .our-projects .container-project .project-title h2 {
+        font-size: 2.5rem;
+    }
+    .our-projects .container-project .project-img {
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .our-projects .container-project .project-img a {
+        width: calc(40% - .62rem);
+    }
+    .our-projects .container-project .project-img img {
+        width: 100%;
+        margin: 0rem;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer .social {
+        left: -5%;
+        top: 82%;
+    }
+    .footer .footer-content {
+        padding-top: 6.25rem;
+    }
+    .footer .footer-content .footer-title {
+        width: 100%;
+    }
+    .footer .footer-content .footer-title hr {
+        width: 60%;
+    }
+    .footer .footer-content .footer-title p {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .footer .footer-content .formulario-content {
+        width: 100%;
+        height: auto;
+    }
+    .footer .footer-content .formulario-content #formulario label, input, p, textarea{
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    .footer .footer-content .footer-text {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .footer .footer-content .footer-text p{
+        font-size: 0.8rem;
+    }
+    .footer .footer-text a {
+        font-size: 0.8rem
+    }
 }
 .footer .fab{
     width: 3.1rem;

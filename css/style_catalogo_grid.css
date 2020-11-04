@@ -372,7 +372,7 @@ body{
     font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
     margin-top: 2rem;
 }
 .c-completo .left {
@@ -651,7 +651,780 @@ body{
 .pie-pag .social i:hover{
     padding:10px 25px;
 }
+@media screen and (max-width:780px){
+    .contenedor .header{
+        grid-area: header;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .contenido{
+        grid-area: contenido;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .diseno{
+        grid-area: diseno;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .talla{
+        grid-area: talla;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .pfinal{
+        grid-area: pfinal;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .c-completo{
+        grid-area: c-completo;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .opiniones{
+        grid-area: opiniones;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .pie-pag{
+        grid-area: pie-pag;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor{
+        width: auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr ; /*para indicar cuantas col. se necesita*/
+        grid-template-rows: repeat(8, auto);
+    }
+    .contenedor{
+        grid-template-areas: "header"
+                         "contenido"
+                         "diseno"
+                         "talla"
+                         "pfinal"
+                         "c-completo"
+                         "opiniones"
+                         "footer";
+    }
 
+    .go-top {
+        left: 85%;
+        bottom: 2.5rem;
+    }
+    .menu .burger-menu {
+        display: block;
+    }
+    .menu .logo-box h1 a {
+        font-size: 1.8rem;
+    }
+    .burger-menu > .fa-bars{
+        display: block;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.3rem;
+        position: absolute;
+    }
+    .burger-menu > .fa-bars:hover{
+        color: var(--blue);
+    }
+    .burger-menu > fa-times {
+        color: var(--blue);
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 3.5rem;
+        width:100%;
+        height: calc(100vh-60px);
+        background: #fff;
+        display: none;
+    }
+    .list-container.is-active{
+        display: block;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: .31rem solid var(--blue1);
+    }
+    .menu .list-container .lists li{
+        /* display: none; */
+        width: 90%;
+        margin: .62rem 0rem;
+        border-bottom: .063rem solid var(--blue1);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 1rem;
+    }
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--blue1);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--blue1);
+    }
+    .contenedor .contenido{
+        width: 100%;
+    }
+    .contenedor .contenido h1{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .contenedor .contenido h2{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .contenedor .contenido p{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product img{
+        width: 5rem;
+        height:6rem;
+        margin-left: 0.5rem;
+    }
+    .contenedor .diseno{
+        width: 100%;
+    }
+    .contenedor .diseno h2{
+        font-size: 1.3rem;
+    }
+    .contenedor .diseno p {
+        font-size: 1.2rem;
+    }
+    .diseno .diseño{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .diseño img {
+        width: 5rem;
+        height: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contenedor .talla h2{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .contenedor .talla p{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .talla .size {
+        width: 60%;
+    }
+    .talla .size {
+        width: 60%;
+    }
+    .contenedor .talla {
+        margin-left: 0;
+    }
+    .contenedor .pfinal {
+        justify-items: center;
+        margin-bottom: 1rem;
+        height: auto;
+        width: 95%;
+        margin: auto;
+    }
+    .contenedor .pfinal h3{
+        font-size: 1.3rem;
+    }
+    .contenedor .pfinal h4{
+        font-size: 1.2rem;
+    }
+    .contenedor .pfinal .flotante{
+        width: 8rem;
+        height: 8rem;
+        font-size: 30px;
+        background: white;
+        position: relative;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top:20px;
+    }
+    .contenedor .pfinal .flotante img{
+        width: 7rem;
+        height:7rem;
+        border-radius: 20px;
+    }
+    .pfinal button{
+        width: 60%;
+        height: 2rem;
+        margin: auto;
+        margin-top: 1rem;
+        display: grid;
+        place-items: center;
+    }
+    .pfinal >button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+    }
+    .pfinal #comprafinal {
+        color: black;
+    }
+    /* Catalogo completo */
+    .c-completo .left {
+        display: none
+    }
+    .c-completo h2{
+        font-size: 1.3rem;
+    }
+    .c-completo .right {
+        display: none
+    }
+    .c-completo .left {
+        display: none
+    }
+    .carrusel {
+        width: 95%;
+    }
+    .carrusel__container {
+        white-space: nowrap;
+        margin: auto;
+        padding-bottom: 0.5rem; /* Espacio abajo, right, left top */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .carrusel-item{
+        background-color: none;
+        width: 3rem;
+        height: 4rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    .carrusel-item img{
+        width: 2.8rem;
+        height:3.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .carrusel-item h3{
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+        margin-top:0.3rem;
+    }
+    .carrusel-item p{
+        margin-top: 0.2rem;
+    }
+    .carrusel__container .carrusel-item >button{
+        width: 1.5rem;
+        height: 1rem;
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin: auto;
+        align-content: right;
+    }
+    .carrusel__container .carrusel-item >button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.3);
+    }
+    /* Contenedor de opiniones */
+    .contenedor .opiniones{
+        width: 95%;
+        height: auto;
+        padding: 0;
+        grid-area: opiniones;
+    }
+    .contenedor .opiniones .Testimonio {
+        width: 95%;
+    }
+    .Testimonio .test-title h2{
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .Testimonio .containerT{
+        width: 80%;
+        margin:auto;
+        height: auto;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding: 0rem 0rem;
+    }
+    .Testimonio .containerT h2{
+        font-size: 0.7rem;
+    }
+    .Testimonio .containerT hr{
+        margin-top: 0.7rem;
+    }
+    .Testimonio .containerT .slides{
+        display: flex;
+        width: 300%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .Testimonio .containerT .slides li {
+        width: 33.3%;
+        position: relative;
+        float: left;
+    }
+    .Testimonio .containerT .slides li img{
+        width: 2rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+    .Testimonio .containerT li span.author{
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .Testimonio .containerT .b-opinion{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        margin:auto;
+        position: relative;
+        justify-content: space-around;
+    }
+    .Testimonio .containerT .b-opinion button{
+        font-size: .5rem;
+        display: flex;
+        position: relative;
+        /* background: var(--blue); */
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+    }
+    .pie-pag {
+        flex-wrap: wrap;
+    }
+    .pie-pag .social {
+        left: -2%;
+        top: 75%;
+    }
+    .pie-pag .social .fab {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .pie-pag .footer-text {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .pie-pag .footer-text p{
+        font-size: 0.8rem;
+    }
+    .pie-pag .footer-text a {
+        font-size: 0.8rem
+    }
+}
+@media screen and (max-width:480px){
+    .contenedor .header{
+        grid-area: header;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .contenido{
+        grid-area: contenido;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .diseno{
+        grid-area: diseno;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .talla{
+        grid-area: talla;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .pfinal{
+        grid-area: pfinal;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .c-completo{
+        grid-area: c-completo;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .opiniones{
+        grid-area: opiniones;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor .pie-pag{
+        grid-area: pie-pag;
+        height: auto;
+        width: 100%;
+    }
+    .contenedor{
+        width: auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr ; /*para indicar cuantas col. se necesita*/
+        grid-template-rows: repeat(8, auto);
+    }
+    .contenedor{
+        grid-template-areas: "header"
+                         "contenido"
+                         "diseno"
+                         "talla"
+                         "pfinal"
+                         "c-completo"
+                         "opiniones"
+                         "footer";
+    }
+
+    .go-top {
+        left: 85%;
+        bottom: 2.5rem;
+    }
+    .menu .burger-menu {
+        display: block;
+    }
+    .menu .logo-box h1 a {
+        font-size: 1.8rem;
+    }
+    .burger-menu > .fa-bars{
+        display: block;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.3rem;
+        position: absolute;
+    }
+    .burger-menu > .fa-bars:hover{
+        color: var(--blue);
+    }
+    .burger-menu > fa-times {
+        color: var(--blue);
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 3.5rem;
+        width:100%;
+        height: calc(100vh-60px);
+        background: #fff;
+        display: none;
+    }
+    .list-container.is-active{
+        display: block;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: .31rem solid var(--blue1);
+    }
+    .menu .list-container .lists li{
+        /* display: none; */
+        width: 90%;
+        margin: .62rem 0rem;
+        border-bottom: .063rem solid var(--blue1);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 1rem;
+    }
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--blue1);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--blue1);
+    }
+    .contenedor .contenido{
+        width: 100%;
+    }
+    .contenedor .contenido h1{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .contenedor .contenido h2{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .contenedor .contenido p{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product img{
+        width: 5rem;
+        height:6rem;
+        margin-left: 0.5rem;
+    }
+    .contenedor .diseno{
+        width: 100%;
+    }
+    .contenedor .diseno h2{
+        font-size: 1.3rem;
+    }
+    .contenedor .diseno p {
+        font-size: 1.2rem;
+    }
+    .diseno .diseño{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .diseño img {
+        width: 5rem;
+        height: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contenedor .talla h2{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .contenedor .talla p{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .talla .size {
+        width: 60%;
+    }
+    .talla .size {
+        width: 60%;
+    }
+    .contenedor .talla {
+        margin-left: 0;
+    }
+    .contenedor .pfinal {
+        justify-items: center;
+        margin-bottom: 1rem;
+        height: auto;
+        width: 95%;
+        margin: auto;
+    }
+    .contenedor .pfinal h3{
+        font-size: 1.3rem;
+    }
+    .contenedor .pfinal h4{
+        font-size: 1.2rem;
+    }
+    .contenedor .pfinal .flotante{
+        width: 8rem;
+        height: 8rem;
+        font-size: 30px;
+        background: white;
+        position: relative;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top:20px;
+    }
+    .contenedor .pfinal .flotante img{
+        width: 7rem;
+        height:7rem;
+        border-radius: 20px;
+    }
+    .pfinal button{
+        width: 60%;
+        height: 2rem;
+        margin: auto;
+        margin-top: 1rem;
+        display: grid;
+        place-items: center;
+    }
+    .pfinal >button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 30px 5px -15px rgba(0,0,0,0.3);
+    }
+    .pfinal #comprafinal {
+        color: black;
+    }
+    /* Catalogo completo */
+    .c-completo .left {
+        display: none
+    }
+    .c-completo h2{
+        font-size: 1.3rem;
+    }
+    .c-completo .right {
+        display: none
+    }
+    .c-completo .left {
+        display: none
+    }
+    .carrusel {
+        width: 95%;
+    }
+    .carrusel__container {
+        white-space: nowrap;
+        margin: auto;
+        padding-bottom: 0.5rem; /* Espacio abajo, right, left top */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .carrusel-item{
+        background-color: none;
+        width: 3rem;
+        height: 4rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    .carrusel-item img{
+        width: 2.8rem;
+        height:3.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .carrusel-item h3{
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+        margin-top:0.3rem;
+    }
+    .carrusel-item p{
+        margin-top: 0.2rem;
+    }
+    .carrusel__container .carrusel-item >button{
+        width: 1.5rem;
+        height: 1rem;
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin: auto;
+        align-content: right;
+    }
+    .carrusel__container .carrusel-item >button:hover{
+        transform: translateY(2px);
+        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.3);
+    }
+    /* Contenedor de opiniones */
+    .contenedor .opiniones{
+        width: 95%;
+        height: auto;
+        padding: 0;
+        grid-area: opiniones;
+    }
+    .contenedor .opiniones .Testimonio {
+        width: 95%;
+    }
+    .Testimonio .test-title h2{
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .Testimonio .containerT{
+        width: 80%;
+        margin:auto;
+        height: auto;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding: 0rem 0rem;
+    }
+    .Testimonio .containerT h2{
+        font-size: 0.7rem;
+    }
+    .Testimonio .containerT hr{
+        margin-top: 0.7rem;
+    }
+    .Testimonio .containerT .slides{
+        display: flex;
+        width: 300%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .Testimonio .containerT .slides li {
+        width: 33.3%;
+        position: relative;
+        float: left;
+    }
+    .Testimonio .containerT .slides li img{
+        width: 2rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+    .Testimonio .containerT li span.author{
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .Testimonio .containerT .b-opinion{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        margin:auto;
+        position: relative;
+        justify-content: space-around;
+    }
+    .Testimonio .containerT .b-opinion button{
+        font-size: .5rem;
+        display: flex;
+        position: relative;
+        /* background: var(--blue); */
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+    }
+    .pie-pag {
+        flex-wrap: wrap;
+    }
+    .pie-pag .social {
+        left: -2%;
+        top: 75%;
+    }
+    .pie-pag .social .fab {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .pie-pag .footer-text {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .pie-pag .footer-text p{
+        font-size: 0.8rem;
+    }
+    .pie-pag .footer-text a {
+        font-size: 0.8rem
+    }
+}
 @media screen and (max-width:320px){
     .contenedor .header{
         grid-area: header;
@@ -1008,7 +1781,29 @@ body{
         outline: none;
         cursor: pointer;
     }
-    
+    .pie-pag {
+        flex-wrap: wrap;
+    }
+    .pie-pag .social {
+        left: -2%;
+        top: 85%;
+    }
+    .pie-pag .footer-text {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .pie-pag .footer-text p{
+        font-size: 0.8rem;
+    }
+    .pie-pag .footer-text a {
+        font-size: 0.8rem
+    }
 }
 
 
