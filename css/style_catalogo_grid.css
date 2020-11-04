@@ -99,7 +99,7 @@ body{
 .contenedor{
     width: auto;
     /* max-width: 1000px; */
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3 , 1fr) ; /*para indicar cuantas col. se necesita */
@@ -1030,6 +1030,8 @@ body{
         height: auto;
         margin: auto;
         text-align: center;
+        border-top: 0px;
+        margin-top: 1rem;
     }
     .pie-pag .footer-text p{
         font-size: 0.8rem;
@@ -1417,6 +1419,8 @@ body{
         height: auto;
         margin: auto;
         text-align: center;
+        border-top: 0px;
+        margin-top: 1rem;
     }
     .pie-pag .footer-text p{
         font-size: 0.8rem;
