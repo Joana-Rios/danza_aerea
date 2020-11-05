@@ -1,51 +1,17 @@
-const left = document.querySelector(".iconLeft")
-console.log(left)
-const right = document.querySelector(".iconRight")
-console.log(right)
-left.addEventListener('click',scrollLeft)
-right.addEventListener('click',scrollRight)
-const slidesTotal = 3 //[0,1,2,3]
-let slideNumber = 0
-function scrollLeft(){
-    if (slideNumber==0) {
-        slideNumber = 0
-        let slidePercent = -slideNumber*100 + '%'
-        document.getElementById("list").style.marginLeft = slidePercent
-        console.log(slidePercent)
-    }
-    else {
-        slideNumber --
-        let slidePercent = -slideNumber*100 + '%'
-        document.getElementById("list").style.marginLeft =slidePercent  
-        console.log(slidePercent)
-    }
-    console.log(slideNumber)
-}
-function scrollRight(){
-    if (slideNumber==slidesTotal) {
-        slideNumber = 3 //[0,1,2,3]
-        let slidePercent = -slideNumber*100 + '%'
-        document.getElementById("list").style.marginLeft = slidePercent
-        console.log(slidePercent)
-    } else {
-        slideNumber ++
-        let slidePercent = -slideNumber*100 + '%'
-        document.getElementById("list").style.marginLeft = slidePercent   
-        console.log(slidePercent)
-    }
-    console.log(slideNumber)
-}
-
 function apareceScroll(){
     var html = document.getElementsByTagName ("html")[0];
+    // console.log(html)
     var elementoAparece = document.getElementsByClassName ("aparece");
-
+    console.log(elementoAparece)
     document.addEventListener("wheel" , function(){
-        var topVent = html.scrollTop;
+        var altura = html.scrollTop;
+        console.log(altura)
         for (i=0; i < elementoAparece.length; i++){
-            var topelemAparece = elememtoAparece[i].offserTop;
-            if (topVent > topelemAparece - 400){
-                elementoAparece[i].style.opacity =1;
+            var alturaImagen = elementoAparece[i].offsetTop;
+            if (altura > alturaImagen - 400 && altura < alturaImagen + 60){ //-400+460=60
+                elementoAparece[i].style.opacity = 1;
+            } else {
+                elementoAparece[i].style.opacity = 0;
             }
         }
     })

@@ -1,29 +1,16 @@
-/* Paso 3 elige tu talla y color  */
-.talla {
-    display: flex;
-    flex-wrap: wrap;
-}
-.talla h2{
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-.talla p{
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-}
-.size {
-    width: 40%;
+.header{
     margin: auto;
-    display: flex;
-    justify-content: center;
+    margin-top: 5%;
+    background-color: aqua;
+    color: black;
 }
-.color {
-    width: 40%;
+body > div > div {
+    width: 30%;
+    height: 50%;
     margin: auto;
-    display: flex;
-    justify-content: center;
+}
+.aparece{
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
 }
