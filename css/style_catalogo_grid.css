@@ -316,11 +316,11 @@ body{
     width: 15rem;
     height: 15rem;
     object-fit: cover;
-    opacity: 1;
     border-radius: 2rem;
     position: absolute;
     margin: auto;
     left: 60rem;
+    opacity: 0;
 }
 .pfinal #one {
     top:15rem;
