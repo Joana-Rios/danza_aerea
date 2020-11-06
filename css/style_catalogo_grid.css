@@ -882,51 +882,21 @@ body{
         margin: auto;
         /* top:50px; */
     }
-    .contenedor .pfinal .flotante .aparece{
-        width: 12%;
-        object-fit: cover;
+    .pfinal #one{
         opacity: 1;
-        border-radius: 30px;
-        position: absolute;
-        top:100px
-    }
-    .contenedor .pfinal .flotante .aparece2{
-        width: 12%;
-        object-fit: cover;
-        opacity: 1;
-        border-radius: 30px;
-        top:250px;
         position: relative;
+        top: 1rem;
+        /* left: 14rem; */
     }
-    .aparece3{
-        width: 12%;
-        object-fit: cover;
-        opacity: 1;
-        border-radius: 50px;
-        top:350px;
-        position: absolute;
+    .pfinal #two{
+        opacity: 0;
     }
-    /* .contenedor .pfinal .flotante img{
-        width: 7rem;
-        height:7rem;
-        position: absolute;  
-        border-radius: 150px; 
-        top:300px;
-    } */
-    /* .contenedor .pfinal .flotante .aparece1{
-        width: 7rem;
-        height:7rem;
-        position: relative;
-        border-radius: 200px;  
-        top:50px;
+    .pfinal #three{
+        opacity: 0;
     }
-    .contenedor .pfinal .flotante .aparece2{
-        width: 7rem;
-        height:7rem;
-        position: relative;
-        border-radius: 300px;  
-        top:80px;
-    } */
+    .pfinal #four{
+        opacity: 0;
+    }
     .pfinal button{
         width: 60%;
         height: 2rem;
@@ -1311,11 +1281,26 @@ body{
         margin: auto;
         margin-top:20px;
     }
-    .contenedor .pfinal .flotante img{
+    .pfinal #one{
+        opacity: 1;
+        position: relative;
+        top: 1rem;
+        left: 4rem;
+    }
+    .pfinal #two{
+        opacity: 0;
+    }
+    .pfinal #three{
+        opacity: 0;
+    }
+    .pfinal #four{
+        opacity: 0;
+    }
+    /* .contenedor .pfinal .flotante img{
         width: 7rem;
         height:7rem;
         border-radius: 20px;
-    }
+    } */
     .pfinal button{
         width: 60%;
         height: 2rem;
@@ -1700,11 +1685,26 @@ body{
         margin: auto;
         margin-top:20px;
     }
-    .contenedor .pfinal .flotante img{
+    .pfinal #one{
+        opacity: 1;
+        position: relative;
+        top: 1rem;
+        left: 2rem;
+    }
+    .pfinal #two{
+        opacity: 0;
+    }
+    .pfinal #three{
+        opacity: 0;
+    }
+    .pfinal #four{
+        opacity: 0;
+    }
+    /* .contenedor .pfinal .flotante img{
         width: 7rem;
         height:7rem;
         border-radius: 20px;
-    }
+    } */
     .pfinal button{
         width: 60%;
         height: 2rem;
