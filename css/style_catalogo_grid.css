@@ -886,7 +886,7 @@ body{
         opacity: 1;
         position: relative;
         top: 1rem;
-        /* left: 14rem; */
+        left: 14rem;
     }
     .pfinal #two{
         opacity: 0;
@@ -1070,7 +1070,7 @@ body{
         font-size: 0.8rem;
     }
     .pie-pag .footer-text a {
-        font-size: 0.8rem
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width:480px){
