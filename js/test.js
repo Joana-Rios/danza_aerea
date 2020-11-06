@@ -8,7 +8,7 @@ function apareceScroll(){
         console.log(altura)
         for (i=0; i < elementoAparece.length; i++){
             var alturaImagen = elementoAparece[i].offsetTop;
-            if (altura > alturaImagen - 400 && altura < alturaImagen + 60){ //-400+460=60
+            if (altura > alturaImagen - 200 && altura < alturaImagen + 260){ //-400+460=60
                 elementoAparece[i].style.opacity = 1;
             } else {
                 elementoAparece[i].style.opacity = 0;
