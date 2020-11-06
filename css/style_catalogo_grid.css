@@ -319,32 +319,22 @@ body{
     opacity: 1;
     border-radius: 2rem;
     position: absolute;
-    top:20rem;
     margin: auto;
     left: 60rem;
 }
-.pfinal .aparece2{
-    width: 15rem;
-    height: 15rem;
-    object-fit: cover;
-    opacity: 1;
-    border-radius: 2rem;
-    position: absolute;
-    top:30rem;
-    margin: auto;
-    left: 60rem;
+.pfinal #one {
+    top:15rem;
 }
-.pfinal .aparece3{
-    width: 15rem;
-    height: 16rem;
-    object-fit: cover;
-    opacity: 1;
-    border-radius: 2rem;
-    position: absolute;
-    top:40rem;
-    margin: auto;
-    left: 60rem;
+.pfinal #two {
+    top:25rem;
 }
+.pfinal #three {
+    top:35rem;
+}
+.pfinal #four {
+    top:45rem;
+}
+
 /* .pfinal .flotante{
     width: 300px;
     height: 300px;
