@@ -696,11 +696,6 @@ body{
         height: auto;
         width: 100%;
     }
-    .contenedor .pfinal{
-        grid-area: pfinal;
-        height: auto;
-        width: 100%;
-    }
     .contenedor .c-completo{
         grid-area: c-completo;
         height: auto;
@@ -858,44 +853,42 @@ body{
     .contenedor .talla {
         margin-left: 0;
     }
-    .contenedor .pfinal {
-        justify-items: center;
-        margin-bottom: 1rem;
-        height: auto;
+    .contenedor .pfinal{
         width: 95%;
         margin: auto;
+        background: var(--white);
+        border-radius: 20px;
+        border: .2rem groove var(--blue);
     }
-    .contenedor .pfinal h3{
+    .pfinal h3{
         font-size: 1.3rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal h4{
+    .pfinal h4{
         font-size: 1.2rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal .flotante{
-        width: 8rem;
-        height: 8rem;
-        /* font-size: 30px;
-        background: white;
-        position: absolute; */
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        /* top:50px; */
-    }
-    .pfinal #one{
-        opacity: 1;
+    .pfinal .aparece{
+        width: 25rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 2rem;
         position: relative;
-        top: 1rem;
-        left: 14rem;
+        margin: auto;
+        left: 0rem;
+        display: none;
     }
-    .pfinal #two{
-        opacity: 0;
-    }
-    .pfinal #three{
-        opacity: 0;
-    }
-    .pfinal #four{
-        opacity: 0;
+    .pfinal #one {
+        position: relative;
+        display: block;
+        opacity: 1;
+        top:0rem;
     }
     .pfinal button{
         width: 60%;
@@ -1256,45 +1249,42 @@ body{
     .contenedor .talla {
         margin-left: 0;
     }
-    .contenedor .pfinal {
-        justify-items: center;
-        margin-bottom: 1rem;
-        height: auto;
+    .contenedor .pfinal{
         width: 95%;
         margin: auto;
+        background: var(--white);
+        border-radius: 20px;
+        border: .2rem groove var(--blue);
     }
-    .contenedor .pfinal h3{
+    .pfinal h3{
         font-size: 1.3rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal h4{
+    .pfinal h4{
         font-size: 1.2rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal .flotante{
-        width: 8rem;
-        height: 8rem;
-        font-size: 30px;
-        background: white;
+    .pfinal .aparece{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 2rem;
         position: relative;
-        right: 10px;
-        display: flex;
-        justify-content: center;
         margin: auto;
-        margin-top:20px;
+        left: 0rem;
+        opacity: 0;
     }
-    .pfinal #one{
-        opacity: 1;
+    .pfinal #one {
         position: relative;
-        top: 1rem;
-        left: 4rem;
-    }
-    .pfinal #two{
-        opacity: 0;
-    }
-    .pfinal #three{
-        opacity: 0;
-    }
-    .pfinal #four{
-        opacity: 0;
+        display: block;
+        opacity: 1;
+        top:0rem;
     }
     /* .contenedor .pfinal .flotante img{
         width: 7rem;
@@ -1660,45 +1650,42 @@ body{
     .contenedor .talla {
         margin-left: 0;
     }
-    .contenedor .pfinal {
-        justify-items: center;
-        margin-bottom: 1rem;
-        height: auto;
+    .contenedor .pfinal{
         width: 95%;
         margin: auto;
+        background: var(--white);
+        border-radius: 20px;
+        border: .2rem groove var(--blue);
     }
-    .contenedor .pfinal h3{
+    .pfinal h3{
         font-size: 1.3rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal h4{
+    .pfinal h4{
         font-size: 1.2rem;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .contenedor .pfinal .flotante{
-        width: 8rem;
-        height: 8rem;
-        font-size: 30px;
-        background: white;
+    .pfinal .aparece{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 2rem;
         position: relative;
-        right: 10px;
-        display: flex;
-        justify-content: center;
         margin: auto;
-        margin-top:20px;
+        left: 0rem;
+        opacity: 0;
     }
-    .pfinal #one{
-        opacity: 1;
+    .pfinal #one {
         position: relative;
-        top: 1rem;
-        left: 2rem;
-    }
-    .pfinal #two{
-        opacity: 0;
-    }
-    .pfinal #three{
-        opacity: 0;
-    }
-    .pfinal #four{
-        opacity: 0;
+        display: block;
+        opacity: 1;
+        top:0rem;
     }
     /* .contenedor .pfinal .flotante img{
         width: 7rem;
