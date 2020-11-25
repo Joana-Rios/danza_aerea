@@ -1,35 +1,50 @@
-.header{
+body form {
+    width: 50%;
+    height: auto;
     margin: auto;
-    margin-top: 5%;
-    background-color: aqua;
-    color: black;
-}
-body > div > div {
-    width: 30%;
-    height: 50%;
-    margin: auto;
-}
-.aparece{
-    width: 12%;
-    object-fit: cover;
-    opacity: 1;
-    border-radius: 30px;
-    position: absolute;
-    top:100px
-}
-.aparece2{
-    width: 12%;
-    object-fit: cover;
-    opacity: 1;
-    border-radius: 30px;
-    top:250px;
-    position: absolute;
-}
-.aparece3{
-    width: 12%;
-    object-fit: cover;
-    opacity: 1;
+    border: 2px solid;
     border-radius: 50px;
-    top:350px;
-    position: absolute;
+    border-color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+form input {
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+    background: rgb(126, 231, 191);
+    color: black;
+    margin-bottom: 0.5rem;
+    border-radius: 50px;
+    outline-style: none;   
+}
+form .botton {
+    width: 20%;
+    background: rgba(187, 255, 0, 0.418);
+}
+::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+.form2 input {
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    background: rgb(126, 231, 191);
+    color: black;
+    border-radius: 50px;
+    outline-style: none;
+}
+.form2 .botton {
+    width: 20%;
+    background: rgba(187, 255, 0, 0.418);
+}
+.form2 label {
+    margin-bottom: 0.5rem;
 }

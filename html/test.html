@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/test.css">
-    <title>Carrusel </title>
+    <title>Conexion BD</title>
 </head>
 <body>
-    <header class="header">Este es nuestro header</header>
-    <div>
-        <div>
-            <figure>
-                <img src="../img/aereo.jpg" alt="figura1" class="aparece">
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="../img/diseño1.jpg" alt="figura1" class="aparece2">
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="../img/negro.jpg" alt="figura1" class="aparece3">
-            </figure>
-        </div>
-    </div>
-    <script src="../js/test.js"></script>
+    <form action="recibir.php" name="formulario" method="POST">
+        <input type="text" name="name" id="name" placeholder="Full Name" maxlength="30">
+        <input type="tel" name="phone" id="Phone" placeholder="Phone" maxlength="10">
+        <input type="text" name="adress" id="adress" placeholder="Adress">
+        <input type="text" name="product" id="product" placeholder="Tu Compra">
+        <input type="submit" value="Enviar" name="enviar" class="botton">
+    </form>
+    <!-- <form action="recibir.php" name="formulario" method="POST" class="form2">
+        <input type="text" name="name" id="name" maxlength="30">
+        <label for="">Full Name</label>
+        <input type="tel" name="phone" id="Phone" maxlength="10">
+        <label for="">Phone</label>
+        <input type="text" name="adress" id="adress">
+        <label for="">Adress</label>
+        <input type="text" name="product" id="product">
+        <label for="">Final Product</label>
+        <input type="submit" value="enviar" class="botton">
+    </form> -->
 </body>
 </html>
