@@ -35,34 +35,69 @@
     <!-- FORMULARIO- DATOS DEL CLIENTE -->
     <div class="formulario">
         <div class="dcliente">
-            <h1>Checkout</h1>
-            <h2>Dirección de envío</h2>
-            <button type="button" id="domicilio">Entrega a domicilio</button>
-            <button type="button" id="punto">Entrega en punto medio</button>
-            <form action="" class="">
-                <label for="">Nombre</label>
-                <input type="text">
-                <label for="">Apellido</label>
-                <input type="text">
-                <label for="">Celular</label>
-                <input type="numero">
-                <label for="">Calle y número</label>
-                <input type="text">
-                <label for="">CP</label>
-                <input type="numero">
-                <label for="">Colonia</label>
-                <input type="text">
-                <label for="">Ciudad</label>
-                <input type="text">
-                <label for="">Estado</label>
-                <input type="text">
+            <!-- <h1>Checkout2</h1> -->
+            <h1>Formularios de compra</h1>
+            <h2>Método de envío</h2>
+            <div class="b_envio">
+                <button type="button" id="domicilio">Entrega a domicilio</button>
+                <button type="button" id="punto">Entrega en punto medio</button>
+            </div>
+            <form action="" class="form">
+                <!-- <label for="">Nombre Completo</label> -->
+                <input type="text" placeholder="Nombre Completo">
+                <br>
+                <!-- <label for="">Celular</label> -->
+                <input type="tel" placeholder="Celular" >
+                <!-- <label for="">Calle y número</label> -->
+                <input type="text" placeholder="Calle y número">
+                <br>
+                <!-- <label for="">CP</label> -->
+                <input type="number"  placeholder="CP">
+                <!-- <label for="">Colonia</label> -->
+                <input type="text" placeholder="Colonia">
+                <br>
+                <!-- <label for="">Ciudad</label> -->
+                <input type="text" placeholder="Ciudad">
+                <!-- <label for="">Estado</label> -->
+                <input type="text" placeholder="Estado">
+                <br>
                 <input type="submit" value="Guardar">
             </form>
-            <form action="" class="Metodo de envio">
-                
+            <br>
+            <!-- <form action="" class="Metodo de envio">
+                <h2>Método de entrega</h2>
+                <input type="checkbox" name="" id="">
+                <label for="">Envio a Domicilio</label>
+                <input type="checkbox" name="" id="">
+                <label for="">Entrega en punto medio</label>
+            </form>
+            <br> -->
+            <form action="" class="m_pago">
+                <h2>Método de pago</h2>
+                <input type="radio" name="" id="">
+                <label for="">Mercado Pago</label>
+                <input type="radio" name="" id="">
+                <label for="">Transferencia</label>
+                <br>
+                <input type="radio" name="" id="">
+                <label for="">Paypal</label>
+                <input type="radio" name="" id="">
+                <label for="">Pago contra entrega</label>
+                <br>
+                <input type="submit" value="Finalizar comprar">
             </form>
         </div>
-
+        <div class="formulario_pf">
+            <div class="capa"></div>
+            <h1 class="descrip">Producto final </h1>
+            <img src="../img/SUDADERA.jpg" alt="">
+            <p class="text_descrip">ummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text 
+            ever since the 1500s, when an unknown
+            printer took
+            </p>
+        </div>
 
     </div>
     <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>

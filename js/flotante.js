@@ -3,6 +3,7 @@ function apareceScroll(){
     // console.log(html)
     const elementoAparece = document.getElementsByClassName ("aparece");
     const pixel = 200
+    const pixelcero = 0
     let alturasImg = [];
     for (let i=0; i < elementoAparece.length; i++){
         let alturaImagen = elementoAparece[i].offsetTop;
@@ -14,6 +15,12 @@ function apareceScroll(){
         console.log(alturasImg[0])
         let altura = html.scrollTop;
         console.log(altura)
+        if (scrollTop = pixelcero){
+            elementoAparece[0].style.opacity = 0;
+            elementoAparece[1].style.opacity = 1;
+            elementoAparece[2].style.opacity = 0;
+            elementoAparece[3].style.opacity = 0;
+        }
         if (altura < alturasImg[0] - pixel){
             elementoAparece[0].style.opacity = 1;
             elementoAparece[1].style.opacity = 0;
@@ -35,7 +42,7 @@ function apareceScroll(){
             elementoAparece[0].style.opacity = 0;
             elementoAparece[1].style.opacity = 0;
             elementoAparece[2].style.opacity = 0;
-        }
+        } 
     })
 }
 apareceScroll();
