@@ -6,7 +6,7 @@
     $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
     
     if(!$enlace) {
-        echo getMessage().'<br>';
+        echo "Error de conexion".'<br>';
     } else {
         echo "Conexion Exitosa ".'<br>';
     }
