@@ -185,6 +185,10 @@ input[ type="submit"]{
     margin: auto;
     margin-top: 1rem;
 }
+.trans{
+    display: none;
+    
+}
 .formulario_pf{
     width: 100%;
     background-color: var(--blue);

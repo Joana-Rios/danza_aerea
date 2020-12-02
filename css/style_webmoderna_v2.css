@@ -1,19 +1,27 @@
 :root{
-    --blue1:#3282b8 ;
-    --white:#f2f6f5;
-    --blue:#0779e4;
+    --morado: #664177;
+    --rosa: #c468a2;
+    --rosac:#edc9d3;
+    --azul:#00CBD4;
+    --azulc: #aacdda;
+    --azulf: #0197ba;
     --black: #1b262c;
+
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
 }
 body{
     background: var(--white);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: 'Cinzel', serif;
+    background: url(../src/Background\ 2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 /* go top */
@@ -23,7 +31,7 @@ body{
     right: 0;
     width: 3.1rem;
     height: 3.1rem;
-    border: .125rem solid var(--blue1);
+    border: .125rem solid var(--black);
     border-radius: 50%;
     background: var(--white);
     z-index: 9999;
@@ -36,7 +44,7 @@ body{
 }
 .go-top:hover{
     border: 0.12rem solid var(--black);
-    background: var(--blue1);
+    background: var(--black1);
 }
 .go-top:hover span{
     color: var(--black);
@@ -46,15 +54,15 @@ body{
     color: var(--black);
 }
 /* skew abajo */
-.skew-abajo{
+/* .skew-abajo{
     position: absolute;
     bottom: 0;
     left: 0;
     border-width:  0 0 20vh 100vw;
     border-style: solid;
     border-color: transparent transparent #f2f6f5  transparent;
-}
-.skew-arriba{
+} */
+/* .skew-arriba{
     position: absolute;
     top: 0;
     left: 0;
@@ -71,7 +79,7 @@ body{
     border-width: 0 0 35vh 100vw;
     border-style: solid;
     border-color: transparent transparent #acdbdf transparent;
-}
+} */
 /** menu de navegacion **/
 #header{
     position: relative;
@@ -83,7 +91,8 @@ body{
     left: 0;
     width: 100%;
     height: 3.7rem;
-    background: var(--white);
+    /* background: var(--white); */
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
 
     display: flex;
     justify-content: space-between;
@@ -92,18 +101,21 @@ body{
 }
 .menu .logo-box{
     margin-left: 1.25rem;
+    display: none;
 }
 .menu .logo-box h1 a{
     text-decoration: none;
     font-size: 1.86rem;
     font-weight: 800;
-    color: var(--blue);  /* para escribir variables */
+    color: var(--black);  /* para escribir variables */
 }
 .menu .burger-menu {
     display: none;
 }
 .menu .list-container{
-    margin-left: 1.25rem;
+    /* margin-left: 1.25rem; */
+    margin: auto;
+    display: flex;
 }
 .menu .list-container .lists{
     display: flex;
@@ -115,17 +127,18 @@ body{
     text-decoration: none;
     margin:0rem .62rem;
     padding: 0.5rem;
-    color: var(--blue);
+    color: var(--black);
     border-radius: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
     transition: 0.3s;
 }
 .menu .list-container .lists li a.activo{
-    background: var(--blue);
+    background: var(--black);
     color:#fff;
 }
 .menu .list-container .lists li a:hover{
-    background: var(--blue);
+    background: var(--black);
     color:#fff;
 }
 .burger-menu > .fab-bars{
@@ -139,12 +152,28 @@ body{
 .img-header{
     width: 100%;
     height: 35rem;
-    background-image: url(../img/fondo.jpg);
-    background-attachment: fixed;
+    /* background-image: url(../img/fondo.jpg); */
+    /* background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
+}
+.img-header .figura{
+    display: flex;
+}
+.img-header .figura figure{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.img-header .figura .logo img{
+    width: 30%;
+    height: auto;
+}
+.img-header .figura .logotipo img{
+    width: 30%;
+    height: auto;
 }
 .img-header .welcome { 
     position: absolute;
@@ -160,35 +189,35 @@ body{
 }
 .img-header .welcome h1{
     font-size: 3.1rem;
-    color: var(--blue);
+    color: var(--black);
     font-weight: 800;
 }
 .img-header .welcome hr{
     width: 20rem;
     height: .125rem;
-    background: var(--blue1);
+    background: var(--black);
     border: none;
     margin-top:0.31rem;
 }
 .img-header .welcome p{
     font-size:1.25rem;
-    color: var(--blue);
+    color: var(--black);
     margin-top:1.25rem;
 }
 .img-header .welcome a >button{
     width:280px;
     /* display:block; */
-    background:linear-gradient(50deg, var(--blue), var(--white));
+    background:linear-gradient(110deg, var(--azul), var(--azulc), var(--morado));
     padding:20px 30px;
     text-align:center;
     margin:auto;
     margin-top:30px;
-    color:blue;
+    color:white;
     font-size:20px;
     border:none;
     text-transform:uppercase;
     letter-spacing:2px;
-    border-radius:20px;
+    border-radius:30px;
 }
 .img-header .welcome a >button:hover{
     transform: translateY(10px);
@@ -197,7 +226,7 @@ body{
 .contenedor{
     width: 100%;
     padding: 2.5rem;
-    background: var(--white);
+    /* background: var(--white); */
 }
 .contenedor .pasos{
     width: 90%;
@@ -209,7 +238,7 @@ body{
 }
 .contenedor h2{
     font-size: 2.5rem;
-    color:var(--blue);
+    color:var(--black);
     text-align: center;
     margin-top: -1.5rem;
 }
@@ -217,7 +246,7 @@ body{
     width: 20%;
     margin:auto;
     height: .18rem;
-    background:var(--blue);
+    background:var(--black);
      
 }
 .contenedor h3{
@@ -306,7 +335,7 @@ body{
     background-size: cover;
     /* margin-top:1rem; */
 }
-.our-projects .deg-background{
+/* .our-projects .deg-background{
     position:absolute;
     top:0;
     left:0;
@@ -316,7 +345,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-}
+} */
 .our-projects .container-project{
     width: 70%;
     margin:auto;
@@ -332,13 +361,13 @@ body{
 }
 .our-projects .container-project .project-title h2{
     font-size: 2.5rem;
-    color: var(--blue);
+    color: var(--black);
 
 } 
 .our-projects .container-project .project-title hr{
     width: 100%;
     height: 0.188rem;
-    background: var(--blue1);
+    background: var(--black1);
     border: none;
     margin-top:0.31rem;
     margin-left: .25rem;
@@ -379,7 +408,7 @@ body{
     padding: 3em 0;
     overflow: hidden;
     border-radius: 2.5rem;
-    border: solid .125rem var(--blue1);
+    border: solid .125rem var(--black1);
     opacity: 0.9;
     
 }
@@ -387,13 +416,13 @@ body{
     margin: 0;
     font-size: 1.86rem;
     font-weight: 100;
-    color: var(--blue);
+    color: var(--black);
 }
 .Testimonio .containerT hr{
     width: 75%;
     height: 0.188rem;
     border: none;
-    background: var(--blue1);
+    background: var(--black1);
     margin-top: 1.86rem;
     margin-left: 5.5rem;    
 }
@@ -415,7 +444,7 @@ body{
 .Testimonio .containerT li q{
     max-width: 90%;
     margin: auto;
-    color: var(--blue);
+    color: var(--black);
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -429,7 +458,7 @@ body{
     margin-top: 1.25rem;
     font-size: 1.12rem;
     font-weight: 100;
-    color: var(--blue);
+    color: var(--black);
     display: block;
 }
 .Testimonio .navigation{
@@ -452,7 +481,7 @@ body{
     height: .62rem;
     width: .62rem;
     border-radius: 50%;
-    border: solid .125rem var(--blue);
+    border: solid .125rem var(--black);
 }
 #radio1:checked ~ .slides {
     transform: translateX(0%);
@@ -469,14 +498,14 @@ body{
 #radio1:checked ~ .navigation label#radioSelect1,
 #radio2:checked ~ .navigation label#radioSelect2,
 #radio3:checked ~ .navigation label#radioSelect3 {
-    background: var(--blue1);
+    background: var(--black1);
 }
 /* footer */
 .footer{
     width: 100%;
-    height: 150vh;
+    height: 192vh;
     position: relative;
-    background:url(../img/fondo.jpg);
+    /* background:url(../img/fondo.jpg); */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -504,14 +533,14 @@ body{
 }
 .footer .footer-content .footer-title h2{
     text-align: center;
-    color: var(--blue);
+    color: var(--black);
     font-size: 1.87rem;
     font-weight:800;
     margin-bottom:.62rem;
 }
 .footer .footer-content .footer-title p{
     text-align: center;
-    color: var(--blue1);
+    color: var(--black1);
     font-size: 1rem;
     font-weight:800;
     margin-top: .80rem;
@@ -521,12 +550,12 @@ body{
     width: 69%;
     margin:auto;
     height: .18rem;
-    background:var(--blue);
+    background:var(--black);
     border:none; 
 }
 .footer .footer-content .footer-title h4{
     text-align: center;
-    color: var(--blue);
+    color: var(--black);
     font-size: 1rem;
     font-weight:800;
     margin-top:1.62rem;
@@ -534,9 +563,10 @@ body{
 .footer .footer-content .formulario-content{
     width: 50%;
     height: auto;
-    background:#fff;
+    /* background:#fff; */
+    background-image: linear-gradient(130deg ,#00CBD4, #aacdda, #EDC9D3, #C468A2);
     border-radius: 1.25rem;
-    border: 2px solid var(--blue1);
+    border: 2px solid var(--black1);
     margin: .1rem auto;
     padding: 1.87rem;
 }
@@ -547,15 +577,15 @@ body{
 }
 .footer .footer-content .formulario-content #formulario label{
     text-align: center;
-    color: var(--blue);
+    color: var(--black);
     font-size: 1.37rem;
     margin: .62rem 0rem .12rem 0rem;
 }
 .footer .footer-content .formulario-content #formulario input{
-    width: 90%;
-    height: 2.18rem;
+    width: 75%;
+    height: 2.5rem;
     margin:auto;
-    border: .12rem solid var(--blue1);
+    border: .12rem solid var(--black1);
     border-radius: 1.5rem;
     outline: none;
     text-align: center;
@@ -565,7 +595,7 @@ body{
 }
 .footer .footer-content .formulario-content #formulario p{
     text-align: center;
-    color: var(--blue);
+    color: var(--black);
     font-size: .62rem;
     color: red;
     margin: .93rem 0rem .31rem 0rem;
@@ -574,7 +604,7 @@ body{
     width: 90%;
     height: 5rem;
     margin: auto;
-    border: 2px solid var(--blue1);
+    border: 2px solid var(--black1);
     border-radius: 1.5rem;
     outline: none;
     font-size: .93rem;
@@ -589,7 +619,7 @@ body{
 .footer .footer-content .formulario-content #formulario .send .boton1{
     width: 7.5rem;
     height: 2.5rem;
-    background: var(--blue1);
+    background: var(--black1);
     border-radius: 1.5rem;
     outline: none;
     font-size: 1.37rem;
@@ -600,14 +630,14 @@ body{
     transition: 0.5s;
 }
 .footer .footer-content .formulario-content #formulario .send .boton1{
-    background: var(--blue);
+    background: var(--black);
     color: var(--white);
 }
 .footer .footer-content .formulario-content .mensaje-form{
     text-align: center;
     font-size: 1.25rem;
     margin-top: 0%;
-    color: var(--blue);
+    color: var(--black);
 }
 .footer .footer-content .footer-text{
     position: absolute;
@@ -615,7 +645,7 @@ body{
     left: 0;
     width: 100%;
     height: 2.5rem;
-    background: rgba(0,0,0,0.8);
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
     border-top: 5px solid #fff;
     display: flex;
     justify-content: center;
@@ -657,12 +687,12 @@ body{
     /* margin-top:-2rem; */
 }
 .footer .social .fa-facebook-f{
-    background: #3b5998;
+    background-color: #c468a2;
     border-top-right-radius: 20%;
     color: var(--white);
 }
 .footer .social .fa-whatsapp{
-    background: #25d366;
+    
     border-bottom-right-radius: 20%;
     color: var(--white);
 }
@@ -715,10 +745,10 @@ body{
         position: absolute;
     }
     .burger-menu > .fa-bars:hover{
-        color: var(--blue);
+        color: var(--black);
     }
     .burger-menu > fa-times {
-        color: var(--blue);
+        color: var(--black);
     }
     .menu .list-container{
         position: absolute;
@@ -739,13 +769,13 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: .31rem solid var(--blue1);
+        border-top: .31rem solid var(--black1);
     }
     .menu .list-container .lists li{
         /* display: none; */
         width: 90%;
         margin: .62rem 0rem;
-        border-bottom: .063rem solid var(--blue1);
+        border-bottom: .063rem solid var(--black1);
         text-align: center;
     }
     .menu .list-container .lists li a{
@@ -753,11 +783,11 @@ body{
     }
     .menu .list-container .lists li a.active{
         background: none;
-        color: var(--blue1);
+        color: var(--black1);
     }
     .menu .list-container .lists li a:hover{
         background: none;
-        color: var(--blue1);
+        color: var(--black1);
     }
     .img-header .welcome {
         text-align: center;
@@ -895,10 +925,10 @@ body{
         position: absolute;
     }
     .burger-menu > .fa-bars:hover{
-        color: var(--blue);
+        color: var(--black);
     }
     .burger-menu > fa-times {
-        color: var(--blue);
+        color: var(--black);
     }
     .menu .list-container{
         position: absolute;
@@ -919,13 +949,13 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: .31rem solid var(--blue1);
+        border-top: .31rem solid var(--black1);
     }
     .menu .list-container .lists li{
         /* display: none; */
         width: 90%;
         margin: .62rem 0rem;
-        border-bottom: .063rem solid var(--blue1);
+        border-bottom: .063rem solid var(--black1);
         text-align: center;
     }
     .menu .list-container .lists li a{
@@ -933,11 +963,11 @@ body{
     }
     .menu .list-container .lists li a.active{
         background: none;
-        color: var(--blue1);
+        color: var(--black1);
     }
     .menu .list-container .lists li a:hover{
         background: none;
-        color: var(--blue1);
+        color: var(--black1);
     }
     .img-header .welcome {
         text-align: center;
@@ -1054,9 +1084,10 @@ body{
     }
 }
 .footer .fab{
-    width: 3.1rem;
-    height: 2.5rem;
-    text-align: center;
+    width: 3.5rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
     font-size:1.8rem;
     margin-top:-1.8rem;
 }
@@ -1078,12 +1109,12 @@ body{
     /* margin-top:-2rem; */
 }
 .footer .social .fa-facebook-f{
-    background: #3b5998;
+    background: black;
     border-top-right-radius: 20%;
     color: var(--white);
 }
 .footer .social .fa-whatsapp{
-    background: #25d366;
+    background:  black;
     border-bottom-right-radius: 20%;
     color: var(--white);
 }
