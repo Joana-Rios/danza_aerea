@@ -16,12 +16,14 @@
 }
 body{
     background: var(--white);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     font-family: 'Cinzel', serif;
     background: url(../src/Background\ 2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100% auto;
     position: relative;
+    background-repeat: no-repeat;
+    
 }
 
 /* go top */
@@ -91,7 +93,6 @@ body{
     left: 0;
     width: 100%;
     height: 3.7rem;
-    /* background: var(--white); */
     background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
 
     display: flex;
@@ -125,11 +126,11 @@ body{
 }
 .menu .list-container .lists li a{
     text-decoration: none;
-    margin:0rem .62rem;
+    margin:0rem 3rem;
     padding: 0.5rem;
-    color: var(--black);
+    color: white;
     border-radius: 1.5rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 900;
     transition: 0.3s;
 }
@@ -138,8 +139,8 @@ body{
     color:#fff;
 }
 .menu .list-container .lists li a:hover{
-    background: var(--black);
-    color:#fff;
+    background: white;
+    color:var(--rosa);
 }
 .burger-menu > .fab-bars{
     display: none;
@@ -161,48 +162,65 @@ body{
 }
 .img-header .figura{
     display: flex;
+    
 }
 .img-header .figura figure{
     width: 50%;
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 .img-header .figura .logo img{
     width: 30%;
+    margin-top:10rem;
     height: auto;
 }
 .img-header .figura .logotipo img{
     width: 30%;
+    margin-top:8rem;
     height: auto;
 }
-.img-header .welcome { 
-    position: absolute;
-    top:0;
-    left:0;
+.img-header .bienvenidos{
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.img-header .bienvenidos .espaciob{
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+.img-header .welcome { 
+    /* position: absolute; */
+    /* top:35rem; */
+    width: 40%;
+    height: auto;
     /* background: rgba(0,0,0,0.6); */
     display:flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
 }
 .img-header .welcome h1{
-    font-size: 3.1rem;
+    font-size: 2.7rem;
     color: var(--black);
     font-weight: 800;
 }
-.img-header .welcome hr{
+/* .img-header .welcome hr{
     width: 20rem;
     height: .125rem;
     background: var(--black);
     border: none;
     margin-top:0.31rem;
-}
+} */
 .img-header .welcome p{
     font-size:1.25rem;
-    color: var(--black);
-    margin-top:1.25rem;
+    color: var(--azulf);
+    font-weight: 900;
+    margin-top: -1.5rem;
+    text-align:right;
 }
 .img-header .welcome a >button{
     width:280px;
@@ -211,9 +229,9 @@ body{
     padding:20px 30px;
     text-align:center;
     margin:auto;
-    margin-top:30px;
+    margin-top:.5rem;
     color:white;
-    font-size:20px;
+    font-size:1rem;
     border:none;
     text-transform:uppercase;
     letter-spacing:2px;
@@ -226,6 +244,7 @@ body{
 .contenedor{
     width: 100%;
     padding: 2.5rem;
+    margin-top: 16rem;
     /* background: var(--white); */
 }
 .contenedor .pasos{
@@ -503,7 +522,7 @@ body{
 /* footer */
 .footer{
     width: 100%;
-    height: 192vh;
+    height: 160vh;
     position: relative;
     /* background:url(../img/fondo.jpg); */
     background-attachment: fixed;
@@ -601,7 +620,7 @@ body{
     margin: .93rem 0rem .31rem 0rem;
 }
 .footer .footer-content .formulario-content #formulario textarea{
-    width: 90%;
+    width: 75%;
     height: 5rem;
     margin: auto;
     border: 2px solid var(--black1);
@@ -630,8 +649,10 @@ body{
     transition: 0.5s;
 }
 .footer .footer-content .formulario-content #formulario .send .boton1{
-    background: var(--black);
-    color: var(--white);
+    background:white;
+    color: var(--morado);
+    font-weight: 600;
+    width: 12rem;
 }
 .footer .footer-content .formulario-content .mensaje-form{
     text-align: center;
@@ -1093,7 +1114,7 @@ body{
 }
 .footer .social{
     position: fixed;
-    left: -1.5rem;
+    left: -3.5rem;
     top:31.21rem;
 }
 .footer .social ul{
