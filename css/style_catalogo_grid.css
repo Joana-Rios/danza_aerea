@@ -1,18 +1,26 @@
 :root{
-    --blue1:#3282b8 ;
-    --white:#f2f6f5;
-    --blue:#0779e4;
+    --morado: #664177;
+    --rosa: #c468a2;
+    --rosac:#edc9d3;
+    --azul:#00CBD4;
+    --azulc: #aacdda;
+    --azulf: #0197ba;
     --black: #1b262c;
 }
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box
 }
 body{
     background: var(--white);
-    color: var(--black);
     font-family: 'Cinzel', serif;
+    background-image: url(../src/Background\ 2.png);
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 .go-top {
     position:fixed;
@@ -51,7 +59,8 @@ body{
     left: 0;
     width: 100%;
     height: 3.7rem;
-    background: var(--white);
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +74,7 @@ body{
     text-decoration: none;
     font-size: 1.86rem;
     font-weight: 800;
-    color: var(--blue);  /* para escribir variables */
+    color: var(--black);  /* para escribir variables */
 }
 .menu .burger-menu {
     display: none;
@@ -78,20 +87,21 @@ body{
 }
 .menu .list-container .lists li a{
     text-decoration: none;
-    margin:0rem .62rem;
+    margin:0rem 3.7rem;
     padding: 0.5rem;
-    color: var(--blue);
+    color: white;
     border-radius: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 900;
     transition: 0.3s;
 }
 .menu .list-container .lists li a.activo{
-    background: var(--blue);
-    color:#fff;
+    background: white;
+    color:var(--rosa);
 }
 .menu .list-container .lists li a:hover{
-    background: var(--blue);
-    color:#fff;
+    background: white;
+    color: var(--rosa);
 }
 .burger-menu > .fab-bars{
     display: none;
@@ -127,7 +137,7 @@ body{
     border-radius: 4px;
 }
 .contenedor .header{
-    background: var(--blue);
+    /* background: var(--blue); */
     color:var(--black);
     grid-area: header;
     /* grid-column-start: 1;
@@ -136,7 +146,7 @@ body{
 /* Paso 1 elige tu producto */
 .contenedor .contenido{
     grid-area: contenido;
-    background: var(--white);
+    /* background: var(--white); */
 }
 .contenedor h1{
     font-size: 40px;
@@ -158,21 +168,23 @@ body{
     text-align: center;
 }
 .product img{
-    width: 150px;
-    height:140px;
+    width: 20%;
+    height:15%;
     margin-top: 20px;
     margin-bottom: 15px;
     cursor:pointer;
     object-fit: cover;
     border-radius:20%;
     margin-left:75px;
+    background: white;
+    box-shadow: 0px 0px 10px;
     /* display: row; */
     /* justify-content: center; */
 }
 /* Paso 2 elige tu diseño */
 .contenedor .diseno{
     grid-area: diseno;
-    background: var(--white);
+    /* background: var(--white); */
 }
 .diseño img{
     width: 150px;
@@ -203,7 +215,7 @@ body{
 .contenedor .talla{
     flex-wrap: wrap;
     grid-area: talla;
-    background: var(--white);
+    /* background: var(--white); */
     margin-left: 3rem;
     display: flex;
 }
@@ -241,11 +253,11 @@ body{
     font-size:1rem;
     font-weight: 800;
     text-align: center;
-    background: white;
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
     cursor:pointer;
     margin: 0.5rem;
     border-radius: 20%;
-    color:var(--blue);
+    color:white;
     border: .1rem solid var(--blue);
 }
 .talla .color {
@@ -287,7 +299,7 @@ body{
 /* Visualiza tu prodcuto final */
 .contenedor .pfinal{
     grid-column: 3 / 4;
-    background: var(--white);
+    background-image: linear-gradient(130deg, #aacdda, #EDC9D3, #C468A2);
     border-radius: 20px;
     border: .2rem groove var(--blue);
     /* text-align: center;
@@ -357,13 +369,13 @@ body{
 .pfinal button{
     width: 18.5rem;
     height: 4.5rem;
-    background:linear-gradient(80deg, var(--blue), var(--white));
+    background-image: linear-gradient(130deg ,#00CBD4, #aacdda, #EDC9D3, #C468A2);
     border-radius: 10rem;
     border: .1rem solid var(--blue);
     outline: none;
-    font-size:.9rem;
+    font-size:1rem;
     font-weight: 700;
-    color:var(--black);
+    color:white;
     text-align: center;
     cursor: pointer;
     transition: 0.2s;
@@ -383,7 +395,7 @@ body{
 .contenedor .c-completo{
     grid-area: c-completo;
     height: 20rem;
-    background: var(--white);
+    /* background: var(--white); */
     width: 100%;
     display: flex;
     align-items: center;
@@ -510,7 +522,7 @@ body{
 }
 /* Opiniones */
 .contenedor .opiniones{
-    background: var(--white);
+    /* background: var(--white); */
     color: var(--black);
     height: 45rem;
     padding: 3em 0;
@@ -614,15 +626,16 @@ body{
 /* Footer */
 .contenedor .pie-pag{
     grid-area: pie-pag;
-
+    height: 160vh;
+    position: relative;
 }
 .pie-pag .footer-text{
-    position: relative;
+    position: absolute;
     bottom:0px;
     left: 0;
     width: 350%;
     height: 40px;
-    background: rgba(0,0,0,0.9);
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
     border-top: 5px solid #fff;
     display: flex;
     justify-content: center;
@@ -631,25 +644,24 @@ body{
     margin-left: -20px;
 }
 .pie-pag  .footer-text p{
-    color: var(--white);
+    color: white;
     font-size: 20px;
 }
 .pie-pag .footer-text a{
-    color: var(--white);
+    color: white;
     font-size: 18px;
     margin-left: 4px;
     margin-right: 5px;
 }
 .pie-pag .social .fab{
     width: 3rem;
-    height: 3rem;
+    height: 2.5rem;
     text-align: center;
-    font-size:2rem;
+    font-size:1.8rem;
 }
 .pie-pag .social{
     position: fixed;
-    left: -15px;
-    top:500px;
+    top:25.5rem;
 }
 .pie-pag .social ul{
     list-style: none;
@@ -657,20 +669,20 @@ body{
 .pie-pag .social i{
     display: inline-block;
     text-decoration: none;
-    color:#fff;
-    padding: 10px 15px;
+    color:white;
+    padding: 1rem .93rem;
     z-index: 0;
     transition: 0.01s ease;
 }
 .pie-pag .social .fa-facebook-f{
-    background: #3b5998;
+    background: black;
     border-top-right-radius: 20%;
-    color: var(--white);
+    color: white;
 }
 .pie-pag .social .fa-whatsapp{
-    background: #25d366;
+    background: black;
     border-bottom-right-radius: 20%;
-    color: var(--white);
+    color: white;
 }
 .pie-pag .social i:hover{
     padding:10px 25px;
@@ -1436,6 +1448,7 @@ body{
     }
     .pie-pag {
         flex-wrap: wrap;
+        background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
     }
     .pie-pag .social {
         left: -2%;

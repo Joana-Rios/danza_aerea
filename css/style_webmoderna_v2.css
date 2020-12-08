@@ -200,13 +200,13 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
 }
 .img-header .welcome h1{
     font-size: 2.7rem;
     color: var(--black);
     font-weight: 800;
+    text-align: center;
 }
 /* .img-header .welcome hr{
     width: 20rem;
@@ -282,15 +282,37 @@ body{
     margin-bottom: .8rem;
     border:none;
 }
-.contenedor .pasos img{
-    width: 60%;
-    margin-bottom: 1.25rem;
-    margin-left: 2.5rem;
-    border-radius: 50%;
+.contenedor .pasos .paso{
+    position: relative;
+}
+.contenedor .pasos .paso .cuadro{
+    position: absolute;
+    width: 100%;
+    height: 200%;
     align-items: center;
-    cursor: pointer;
+    border: none;
     transition: 500ms;
-    border:none;
+    cursor: pointer;
+}
+.contenedor .pasos .paso .items{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    align-items: center;
+    border: none;
+    transition: 500ms;
+    cursor: pointer;
+}
+.contenedor .pasos .paso .numero{
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    align-items: center;
+    border: none;
+    transition: 500ms;
+    cursor: pointer;
+    left: 150px;
+    bottom: 1px;
 }
 .contenedor .pasos .color{
     width: 45%;
@@ -412,6 +434,8 @@ body{
     object-fit:cover;
     border-radius: .62rem;
     cursor:pointer;
+    background: white;
+    box-shadow: 0px 0px 10px  black;
 }
 
 /* testimonios */
@@ -553,15 +577,15 @@ body{
 .footer .footer-content .footer-title h2{
     text-align: center;
     color: var(--black);
-    font-size: 1.87rem;
+    font-size: 2rem;
     font-weight:800;
     margin-bottom:.62rem;
 }
 .footer .footer-content .footer-title p{
     text-align: center;
     color: var(--black1);
-    font-size: 1rem;
-    font-weight:800;
+    font-size: 1.3rem;
+    /* font-weight:600; */
     margin-top: .80rem;
     margin-bottom:-.8rem;
 }
@@ -673,11 +697,11 @@ body{
     align-items: center;
 }
 .footer .footer-content .footer-text p{
-    color: #fff;
+    color: rgb(167, 151, 151);
     font-size: 1.25rem;
 }
 .footer .footer-text a{
-    color: var(--white);
+    color: white;
     font-size: 18px;
     margin-left: 4px;
     margin-right: 5px;
@@ -871,10 +895,12 @@ body{
     }
     .our-projects .container-project .project-img a {
         width: calc(40% - .62rem);
+
     }
     .our-projects .container-project .project-img img {
         width: 100%;
         margin: 0rem;
+        box-shadow: 0px 0px 10px;
     }
     .footer {
         flex-wrap: wrap;
@@ -1058,6 +1084,8 @@ body{
     .our-projects .container-project .project-img img {
         width: 100%;
         margin: 0rem;
+        background: red;
+        box-shadow: 0px 0px 10px;
     }
     .footer {
         flex-wrap: wrap;
